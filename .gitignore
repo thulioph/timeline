@@ -4,3 +4,4 @@
 arquivos/*
 node_modules/*
 src/js/vendor/*
+.sass-cache/*
