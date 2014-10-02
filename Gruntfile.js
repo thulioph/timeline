@@ -19,7 +19,6 @@ module.exports = function(grunt) {
       src: {
         files: [ 'src/sass/*.scss' ],
         tasks: [ 'sass:dist', 'concat' ]
-        // tasks: [ 'compass', 'concat' ]
       },
 
       js: {
@@ -33,7 +32,7 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'src',
+          cwd: 'src/',
           src: 'sass/*.scss',
           dest: 'src/css',
           ext: '.css'
