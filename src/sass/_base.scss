@@ -1,0 +1,48 @@
+// ====================
+// Colors
+// ====================
+
+$aqua: #96b6b3;
+$green: $aqua;
+
+$palegoldenrod: #f3ead2;
+$yellow: $palegoldenrod;
+
+$dark: #333333;
+$black: $dark;
+
+$red: #990000;
+$color-complementary: $red;
+
+
+// ====================
+// Fonts
+// ====================
+
+$comic-regular: 'ComicBookRegular';
+
+$lithos-black: 'LithosPro850';
+
+$lithos-regular: 'LithosProRegular';
+$title-period: $lithos-regular;
+
+
+// ====================
+// Mixins
+// ====================
+
+@mixin transition($property, $time, $method, $delay){
+  -webkit-transition: $property $time $method $delay;
+     -moz-transition: $property $time $method $delay;
+      -ms-transition: $property $time $method $delay;
+       -o-transition: $property $time $method $delay;
+          transition: $property $time $method $delay;
+}
+
+@mixin rotate($value) {
+  -webkit-transform: rotate($value);
+     -moz-transform: rotate($value);
+      -ms-transform: rotate($value);
+       -o-transform: rotate($value);
+          transform: rotate($value);
+}

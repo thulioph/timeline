@@ -1,0 +1,140 @@
+// ====================
+// Other
+// ====================
+
+body {
+  font-size: 10px;
+  background-color: $yellow;
+}
+
+ul { padding: 0; }
+li { list-style-type: none; }
+
+// ====================
+// Structure
+// ====================
+
+.main {
+  display: block;
+  width: 100%;
+  position: relative;
+  max-height: 580px;
+  min-height: 580px;
+  overflow-x: hidden;
+  top: 0;
+
+  .content {
+    width: 96%;
+    height: 96%;
+    padding: 10px;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+.header-primary {
+  width: 100%;
+  height: 185px;
+  position: relative;
+  bottom: 0;
+}
+
+
+
+//
+// Header
+//
+
+// Years
+.year-list {
+  width: 100%;
+  height: 30px;
+  margin: 0 0 10px 0;
+  background-color: $green;
+  position: relative;
+}
+
+
+// Nav
+.nav-list {
+  background-color: $green;
+  margin: 0;
+  height: 150px;
+}
+
+.nav-item {
+  display: inline-block;
+  vertical-align: middle;
+  list-style-type: none;
+  width: 270px;
+  height: 133px;
+  margin: 0 20px 0 20px;
+  // background-color: orange;
+}
+
+.nav-link {
+  display: block;
+  width: 140px;
+  height: 100%;
+  text-decoration: none;
+  float: left;
+
+  // &:hover {
+  //   .img-link {
+  //     img {
+  //       @include rotate(10deg);
+  //     }
+  //   }
+  // }
+}
+
+.img-link {
+  margin: 0 auto auto 40px;
+
+  img {
+    @include transition(all, .1s, linear, 0s);
+  }
+
+  figcaption {
+    text-transform: uppercase;
+    color: $black;
+    font-family: $title-period;
+    width: 210px;
+    text-align: left;
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+}
+
+.text-complementary {
+  float: left;
+  margin-top: 50px;
+  position: relative;
+  width: 150px;
+  left: 20px;
+  text-align: center;
+  font-family: $title-period;
+  font-size: 1.1em;
+  color: $color-complementary;
+}
+
+
+//
+// Main
+//
+
+.content {
+  figure { text-align: center; }
+
+  p {
+    font-size: 1.8em;
+    text-align: left;
+    color: $black;
+    line-height: 1.4em;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+}
+
+
+
+
