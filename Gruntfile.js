@@ -4,7 +4,11 @@ module.exports = function(grunt) {
 
   // Definição dos arquivos js
   var filesJS = [
-          'src/js/APP.js'
+          'src/js/vendor/jquery/dist/jquery.min.js',
+          'src/js/vendor/slick-carousel/slick/slick.min.js',
+          'src/js/APP.js',
+          'src/js/APP.General.js',
+          'src/js/APP.Slide.js'
       ];
 
   // Load all tasks
@@ -34,7 +38,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'src/',
           src: 'sass/*.scss',
-          dest: 'src/css',
+          dest: 'src/css/',
           ext: '.css'
         }]
       }
@@ -111,7 +115,8 @@ module.exports = function(grunt) {
   });
 
   // registrando tarefa default
-  grunt.registerTask( 'default', [ 'browserSync', 'watch' ] );
+  grunt.registerTask( 'default', [ 'watch' ] );
+  // grunt.registerTask( 'default', [ 'browserSync', 'watch' ] );
   grunt.registerTask( 'img', [ 'clean', 'imagemin' ] );
 
   // grunt.registerTask( 'src', [ 'compass:dist', 'concat:js', 'concat:css' ] );
