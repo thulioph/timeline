@@ -620,7 +620,7 @@ li {
   text-align: center; }
 .content p {
   font-size: 1.8em;
-  text-align: left;
+  text-align: justify;
   color: #333333;
   line-height: 1.4em;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
