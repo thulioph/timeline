@@ -2,6 +2,19 @@ var APP = APP || {};
 APP.Slide = {
   setUp: function() {
     this.activeSlide();
+    this.viewport();
+  },
+
+  viewport: function() {
+    window.onresize = function(event) {
+      var largura = window.innerWidth;
+
+      if (largura <= 854) {
+        console.log('MENOR!');
+      } else {
+        console.log('MAIOR!');
+      }
+    };
   },
 
   activeSlide: function() {
