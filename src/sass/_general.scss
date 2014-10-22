@@ -10,6 +10,8 @@ body {
 ul { padding: 0; }
 li { list-style-type: none; }
 
+
+
 // ====================
 // Structure
 // ====================
@@ -17,59 +19,121 @@ li { list-style-type: none; }
 .main {
   display: block;
   width: 100%;
+  height: 100%;
   position: relative;
-  max-height: 580px;
-  min-height: 580px;
-  overflow-x: hidden;
   top: 0;
 
   .content {
     width: 96%;
-    height: 96%;
-    padding: 10px;
+    height: 100%;
+    overflow: auto;
+    padding: 10px 20px;
     position: relative;
     margin: 0 auto;
+
+    background-attachment: fixed;
+    background: $yellow url("../../src/images/bordas-laterais.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
   }
 }
 
 .header-primary {
   width: 100%;
-  height: 185px;
-  position: relative;
+  height: 155px;
+  position: fixed;
   bottom: 0;
 }
 
 
 
-//
+// ====================
 // Header
-//
-
-// Years
-.year-list {
-  width: 100%;
-  height: 30px;
-  margin: 0 0 10px 0;
-  background-color: $green;
-  position: relative;
-}
-
+// ====================
 
 // Nav
 .nav-list {
   background-color: $green;
   margin: 0;
-  height: 150px;
+  height: 155px;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 30px;
+    top: -40px;
+    display: block;
+    background-color: $green;
+    position: absolute;
+  }
+
+  &::after {
+    content: '';
+    width: 100%;
+    display: block;
+    position: absolute;
+    height: 15px;
+    top: -15px;
+    background: $yellow url('../../src/images/base-timeline.png');
+    background-repeat: no-repeat;
+    background-position: 0 7px;
+  }
 }
 
 .nav-item {
-  display: inline-block;
   vertical-align: middle;
   list-style-type: none;
-  width: 270px;
   height: 133px;
   margin: 0 20px 0 20px;
-  // background-color: orange;
+  position: relative;
+
+  &::before {
+    @include data(data-start);
+  }
+
+  // Edit position of legend
+  &:nth-child(6) {
+    figcaption {
+      width: 140px;
+      font-size: 1em;
+    }
+  }
+
+  &:nth-child(7) {
+    figcaption {
+      width: 150px;
+      font-size: 1em;
+    }
+  }
+
+  &:nth-child(8) {
+    figcaption {
+      width: 150px;
+      font-size: 1em;
+    }
+
+    aside {
+      width: 190px;
+      font-size: .9em;
+      left: 40px;
+    }
+  }
+
+  &:nth-child(9) {
+    figcaption {
+      width: 90px;
+      font-size: 1em;
+    }
+  }
+
+  &:nth-child(10) {
+    figcaption {
+      width: 150px;
+      font-size: 1em;
+    }
+  }
 }
 
 .nav-link {
@@ -78,28 +142,17 @@ li { list-style-type: none; }
   height: 100%;
   text-decoration: none;
   float: left;
-
-  // &:hover {
-  //   .img-link {
-  //     img {
-  //       @include rotate(10deg);
-  //     }
-  //   }
-  // }
 }
 
 .img-link {
   margin: 0 auto auto 40px;
-
-  img {
-    @include transition(all, .1s, linear, 0s);
-  }
+  display: block;
 
   figcaption {
     text-transform: uppercase;
     color: $black;
     font-family: $title-period;
-    width: 210px;
+    width: 120px;
     text-align: left;
     font-size: 1.2em;
     margin-top: 10px;
@@ -116,12 +169,17 @@ li { list-style-type: none; }
   font-family: $title-period;
   font-size: 1.1em;
   color: $color-complementary;
+
+  &::before {
+    @include data(data-end);
+  }
 }
 
 
-//
+
+// ====================
 // Main
-//
+// ====================
 
 .content {
   figure { text-align: center; }
@@ -137,4 +195,59 @@ li { list-style-type: none; }
 
 
 
+// ====================
+// Pages Internal
+// ====================
 
+.title-primary {
+  color: $green;
+  font-size: 4em;
+  text-align: center;
+  margin: 0 auto 40px auto;
+  text-transform: uppercase;
+  font-family: $lithos-black;
+}
+
+
+
+// ====================
+// Break Points
+// ====================
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  .main {
+    min-height: 595px;
+    max-height: 595px;
+
+    .content {
+      height: 565px;
+    }
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  .main {
+    min-height: 880px;
+    max-height: 880px;
+
+    .content {
+      height: 850px;
+    }
+  }
+
+  .nav-item,
+  .text-complementary {
+    &::before {
+      font-size: .8em;
+    }
+  }
+
+  .text-complementary {
+    &::before {
+      right: -40px;
+      top: -217px;
+    }
+  }
+}
