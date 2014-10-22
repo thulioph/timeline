@@ -46,3 +46,37 @@ $title-period: $lithos-regular;
        -o-transform: rotate($value);
           transform: rotate($value);
 }
+
+// ====================
+// Helpers
+// ====================
+
+%data {
+  font-family: $comic-regular;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0 10px;
+  min-width: 100px;
+  position: absolute;
+  display: inline-block;
+  border-right: 2px solid $yellow;
+}
+
+@mixin data ($attr) {
+  content: attr($attr);
+  @extend %data;
+
+  @if $attr == 'data-start' {
+    top: -40px;
+    color: $dark;
+    height: 20px;
+    line-height: 30px;
+    left: 35px;
+  } @else if $attr == 'data-end' {
+    height: 23px;
+    right: 0;
+    top: -83px;
+    line-height: 18px;
+    color: $yellow;
+  }
+}
