@@ -5,12 +5,14 @@ APP.General = {
   },
 
   getClick: function() {
-    var href;
+    var href, url;
 
     $('.nav-list').on('click', 'a', function(event) {
       event.preventDefault();
 
       href = $(this).attr('href');
+      url = location.href;
+      console.log(url+href);
 
       APP.General.request(href);
     });
