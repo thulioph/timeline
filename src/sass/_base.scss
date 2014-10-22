@@ -15,6 +15,7 @@ $red: #990000;
 $color-complementary: $red;
 
 
+
 // ====================
 // Fonts
 // ====================
@@ -25,6 +26,24 @@ $lithos-black: 'LithosPro850';
 
 $lithos-regular: 'LithosProRegular';
 $title-period: $lithos-regular;
+
+
+
+// ====================
+// Helpers
+// ====================
+
+%data {
+  font-family: $comic-regular;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0 10px;
+  min-width: 100px;
+  position: absolute;
+  display: inline-block;
+  border-right: 2px solid $yellow;
+}
+
 
 
 // ====================
@@ -47,21 +66,13 @@ $title-period: $lithos-regular;
           transform: rotate($value);
 }
 
-// ====================
-// Helpers
-// ====================
-
-%data {
-  font-family: $comic-regular;
-  font-size: 1.2em;
-  text-align: center;
-  padding: 0 10px;
-  min-width: 100px;
-  position: absolute;
-  display: inline-block;
-  border-right: 2px solid $yellow;
+@mixin truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
+// Show events period
 @mixin data ($attr) {
   content: attr($attr);
   @extend %data;
