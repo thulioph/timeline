@@ -78,7 +78,7 @@ $title-period: $lithos-regular;
   @extend %data;
 
   @if $attr == 'data-start' {
-    top: -40px;
+    top: -34px;
     color: $dark;
     height: 20px;
     line-height: 30px;
@@ -86,7 +86,7 @@ $title-period: $lithos-regular;
   } @else if $attr == 'data-end' {
     height: 23px;
     right: 0;
-    top: -83px;
+    top: -73px;
     line-height: 18px;
     color: $yellow;
   }
