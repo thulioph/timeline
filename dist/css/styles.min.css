@@ -556,7 +556,7 @@ li {
   position: relative;
   top: 0; }
   .main .content {
-    width: 96%;
+    width: 90%;
     height: 100%;
     overflow: auto;
     padding: 10px 20px;
@@ -572,6 +572,7 @@ li {
   width: 100%;
   height: 155px;
   position: fixed;
+  z-index: 1000;
   bottom: 0; }
 
 .nav-list {
@@ -679,14 +680,6 @@ li {
     line-height: 1.4em;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
 
-.title-primary {
-  color: #96b6b3;
-  font-size: 4em;
-  text-align: center;
-  margin: .3em auto 40px auto;
-  text-transform: uppercase;
-  font-family: "LithosPro850"; }
-
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .main {
@@ -718,5 +711,85 @@ li {
 @media only screen and (min-width: 1224px) {
   .main {
     height: 420px; } }
+.page-internal {
+  position: relative; }
+  .page-internal .title-primary {
+    color: #96b6b3;
+    font-size: 4em;
+    text-align: center;
+    margin: .3em auto 40px auto;
+    text-transform: uppercase;
+    font-family: "LithosPro850"; }
+  .page-internal p {
+    font-size: 1.6em !important; }
+  .page-internal span {
+    color: #990000; }
+    .page-internal span.tracejado-01 {
+      width: 499px;
+      height: 55px;
+      position: absolute;
+      background: url("../../src/images/pag01/tracejado-01.png");
+      background-repeat: no-repeat;
+      top: 138px;
+      left: 380px; }
+  .page-internal .left {
+    float: left; }
+  .page-internal .right {
+    float: right; }
+  .page-internal .clear {
+    clear: both; }
+  .page-internal .color1 {
+    background-color: #bfdad7;
+    padding: 10px; }
+  .page-internal .color2 {
+    background-color: #99b283;
+    padding: 10px; }
+  .page-internal .texto-mapa-01 {
+    width: 320px;
+    margin-left: -30px;
+    margin-top: 10px; }
+  .page-internal .image-mapa-01 {
+    margin-top: -60px;
+    position: relative;
+    z-index: 3;
+    left: -30px; }
+  .page-internal .texto-mapa-02 {
+    width: 200px;
+    position: relative;
+    padding-left: 100px;
+    top: -90px;
+    right: -90px;
+    z-index: 1; }
+  .page-internal .image-caveira {
+    margin-left: -200px;
+    z-index: 10;
+    position: relative; }
+  .page-internal .texto-caveira {
+    padding: 10px 10px 10px 200px;
+    position: relative;
+    z-index: 8;
+    margin-top: -150px;
+    margin-left: -10px; }
+  .page-internal .image-luzia-principal {
+    left: 340px;
+    top: -250px;
+    position: relative;
+    display: inline-block; }
+  .page-internal .serra-capivara {
+    margin-top: -620px; }
+  .page-internal .texto-serra-capivara {
+    width: 220px;
+    float: right;
+    right: 10px;
+    position: relative; }
+  .page-internal .arte-serra-capivara {
+    top: -280px;
+    position: relative;
+    left: -160px; }
+  .page-internal .putaquepariu {
+    display: inline-block;
+    position: absolute;
+    left: 410px;
+    top: 1050px; }
 
 /*# sourceMappingURL=main.css.map */
