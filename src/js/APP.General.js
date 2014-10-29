@@ -23,6 +23,7 @@ APP.General = {
       url: href,
 
       beforeSend: function() {
+        APP.Timeline.stateTwo();
         $('#content').html('Carregando conteúdo...');
       },
 

@@ -50,12 +50,12 @@ $title-period: $lithos-regular;
 // Mixins
 // ====================
 
-@mixin transition($property, $time, $method, $delay){
-  -webkit-transition: $property $time $method $delay;
-     -moz-transition: $property $time $method $delay;
-      -ms-transition: $property $time $method $delay;
-       -o-transition: $property $time $method $delay;
-          transition: $property $time $method $delay;
+@mixin transition($rulers...){
+  -webkit-transition: $rulers;
+     -moz-transition: $rulers;
+      -ms-transition: $rulers;
+       -o-transition: $rulers;
+          transition: $rulers;
 }
 
 @mixin rotate($value) {
