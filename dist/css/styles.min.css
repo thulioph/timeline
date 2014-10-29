@@ -697,6 +697,56 @@ li {
     line-height: 1.4em;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
 
+.ribbon {
+  position: absolute;
+  overflow: hidden;
+  width: 35px;
+  height: 80px;
+  margin-left: 4px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
+.ribbon-base {
+  background: #fff;
+  position: relative; }
+  .ribbon-base a {
+    display: block;
+    width: 21px;
+    height: 19px;
+    text-indent: -9999px;
+    position: relative;
+    z-index: 100;
+    margin-top: 24px;
+    margin-left: 7px;
+    background-image: url("../../src/images/icon-home.png");
+    background-size: 21px 19px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg); }
+
+.ribbon-aba {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+  .ribbon-aba.left {
+    left: -17.5px;
+    bottom: 28px; }
+  .ribbon-aba.right {
+    right: -17.5px;
+    bottom: 27px; }
+
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .main {
@@ -710,6 +760,7 @@ li {
     min-height: 880px;
     max-height: 880px; }
     .main .content {
+      width: 80%;
       height: 850px; }
 
   .nav-item::before,

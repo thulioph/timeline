@@ -216,7 +216,55 @@ li { list-style-type: none; }
   }
 }
 
+// Ribbon
+.ribbon {
+  position: absolute;
+  overflow: hidden;
+  width: 35px;
+  height: 80px;
+  margin-left: 4px;
+  @include rotate(-90deg);
+}
 
+.ribbon-base {
+  background: #fff;
+  position: relative;
+
+  a {
+    display: block;
+    width: 21px;
+    height: 19px;
+    text-indent: -9999px;
+    position: relative;
+    z-index: 100;
+    margin-top: 24px;
+    margin-left: 7px;
+
+    background-image: url('../../src/images/icon-home.png');
+    background-size: 21px 19px;
+
+    @include rotate(90deg);
+  }
+}
+
+.ribbon-aba {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  position: absolute;
+  z-index: 1;
+  @include rotate(45deg);
+
+  &.left {
+    left: -17.5px;
+    bottom: 28px;
+  }
+
+  &.right {
+    right: -17.5px;
+    bottom: 27px;
+  }
+}
 
 // ====================
 // Break Points
@@ -241,6 +289,7 @@ li { list-style-type: none; }
     max-height: 880px;
 
     .content {
+      width: 80%;
       height: 850px;
     }
   }
