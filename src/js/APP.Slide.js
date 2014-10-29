@@ -2,7 +2,7 @@ var APP = APP || {};
 APP.Slide = {
   setUp: function() {
     this.activeSlide();
-    this.viewport();
+    // this.viewport();
   },
 
   viewport: function() {

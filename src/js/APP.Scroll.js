@@ -5,6 +5,6 @@ APP.Scroll = {
   },
 
   startScroll: function() {
-    console.log('To dentro!');
+    console.log('APP.Scroll');
   }
 }

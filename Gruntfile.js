@@ -7,7 +7,9 @@ module.exports = function(grunt) {
           'src/js/vendor/jquery/dist/jquery.min.js',
           'src/js/vendor/slick-carousel/slick/slick.min.js',
           'src/js/APP.js',
+          'src/js/APP.Timeline.js',
           'src/js/APP.General.js',
+          'src/js/APP.Scroll.js',
           'src/js/APP.Slide.js'
       ];
 
