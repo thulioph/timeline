@@ -558,15 +558,12 @@ li {
   .main .content {
     width: 90%;
     height: 100%;
-    overflow: auto;
-    padding: 10px 20px;
+    padding: 10px 20px 80px 20px;
     position: relative;
     margin: 0 auto;
-    background-attachment: fixed;
-    background: #f3ead2 url("../../src/images/bordas-laterais.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover; }
+    background-color: #f3ead2; }
+    .main .content.js-padding {
+      padding-bottom: 190px; }
 
 .header-primary {
   width: 100%;
@@ -709,19 +706,17 @@ li {
     opacity: 1;
     top: -200px; }
 
-.content {
-  position: relative; }
-  .content figure {
-    text-align: center; }
-  .content p {
-    font-size: 1.8em;
-    text-align: justify;
-    color: #333333;
-    line-height: 1.4em;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+.content figure {
+  text-align: center; }
+.content p {
+  font-size: 1.8em;
+  text-align: justify;
+  color: #333333;
+  line-height: 1.4em;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
 
 .ribbon {
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   width: 35px;
   height: 80px;
@@ -772,23 +767,10 @@ li {
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  .main {
-    min-height: 595px;
-    max-height: 595px; }
-    .main .content {
-      height: 565px; }
-
   .img-link figcaption {
     font-size: 1em; } }
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .main {
-    min-height: 880px;
-    max-height: 880px; }
-    .main .content {
-      width: 80%;
-      height: 850px; }
-
   .img-link figcaption {
     font-size: 1em; }
 
@@ -798,9 +780,6 @@ li {
     .text-complementary.js-show {
       top: -270px; } }
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  .main {
-    height: 420px; } }
 .page-internal {
   position: relative; }
   .page-internal .title-primary {

@@ -26,16 +26,20 @@ li { list-style-type: none; }
   .content {
     width: 90%;
     height: 100%;
-    overflow: auto;
-    padding: 10px 20px;
+    padding: 10px 20px 80px 20px;
     position: relative;
     margin: 0 auto;
 
-    background-attachment: fixed;
-    background: $yellow url("../../src/images/bordas-laterais.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
+    background-color: $yellow;
+    // background-attachment: fixed;
+    // background: $yellow url("../../src/images/bordas-laterais.png");
+    // background-repeat: no-repeat;
+    // background-position: top center;
+    // background-size: cover;
+
+    &.js-padding {
+      padding-bottom: 190px;
+    }
   }
 }
 
@@ -228,8 +232,6 @@ li { list-style-type: none; }
 // ====================
 
 .content {
-  position: relative;
-
   figure {
     text-align: center;
   }
@@ -245,7 +247,7 @@ li { list-style-type: none; }
 
 // Ribbon
 .ribbon {
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   width: 35px;
   height: 80px;
@@ -299,15 +301,6 @@ li { list-style-type: none; }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-  .main {
-    min-height: 595px;
-    max-height: 595px;
-
-    .content {
-      height: 565px;
-    }
-  }
-
   .img-link {
     figcaption {
       font-size: 1em;
@@ -317,16 +310,6 @@ li { list-style-type: none; }
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-  .main {
-    min-height: 880px;
-    max-height: 880px;
-
-    .content {
-      width: 80%;
-      height: 850px;
-    }
-  }
-
   .img-link {
     figcaption {
       font-size: 1em;
@@ -344,8 +327,4 @@ li { list-style-type: none; }
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
-  .main {
-    height: 420px;
-  }
-}
+@media only screen and (min-width : 1224px) {}

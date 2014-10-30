@@ -15,6 +15,7 @@ APP.Timeline = {
     $('#click-animation').css('bottom', '165px');
     $('#header-primary').addClass('js-open');
     APP.Timeline.showLegend();
+    APP.Timeline.addPaddingContent();
   },
 
   stateTwo: function() {
@@ -22,6 +23,7 @@ APP.Timeline = {
     $('#click-animation').css('bottom', '170px');
     $('#header-primary').addClass('js-closed');
     APP.Timeline.hideLegend();
+    APP.Timeline.removePaddingContent();
   },
 
   hideLegend: function() {
@@ -32,6 +34,14 @@ APP.Timeline = {
   showLegend: function() {
     $('.text-complementary').removeClass('js-hide');
     $('.text-complementary').addClass('js-show');
+  },
+
+  addPaddingContent: function() {
+    $('#content').addClass('js-padding');
+  },
+
+  removePaddingContent: function() {
+    $('#content').removeClass('js-padding');
   },
 
   trigger: function() {
