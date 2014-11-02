@@ -1,0 +1,218 @@
+// ====================
+// Pages Internal
+// ====================
+
+.pag03 {
+
+  .texto01 {
+    width: 455px;
+    margin-left: 82px;
+    margin-top: -10px;
+    float: left;
+  }
+
+  .tracejado01 {
+    width: 623px;
+    height: 2px;
+    margin-top: 95px;
+    margin-left: 80px;
+    position: absolute;
+    @include path('pag03/tracejado-01.png');
+  }
+
+  .tracejado02 {
+    width: 122px;
+    height: 206px;
+    margin-top: 158px;
+    margin-left: 422px;
+    position: absolute;
+    @include path('pag03/tracejado-02.png');
+  }
+
+  .tome-souza {
+    width: 398px;
+    float: right;
+    margin-top: -34px;
+    margin-right: -20px;
+    position: relative;
+
+    a {
+      position: relative;
+      z-index: 4;
+    }
+
+    p {
+      width: 155px;
+      position: absolute;
+      right: 0;
+      top: 87px;
+      padding: 18px 20px 30px 40px;
+      font-size: 1.2em;
+      background-color: $azul;
+    }
+  }
+
+  .pau-brasil-01 {
+    width: 260px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 84px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .tracejado04 {
+    position: absolute;
+    width: 186px;
+    height: 105px;
+    margin-top: 293px;
+    margin-left: 260px;
+    @include path('pag03/tracejado-04.png');
+  }
+
+  .pau-brasil-02 {
+    width: 345px;
+    float: left;
+    margin-left: 27px;
+    margin-top: 11px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .tracejado05 {
+    position: absolute;
+    width: 255px;
+    height: 259px;
+    margin-top: 420px;
+    margin-left: 630px;
+    @include path('pag03/tracejado-05.png');
+  }
+
+  .texto02 {
+    width: 240px;
+    float: right;
+    margin-top: 87px;
+    margin-right: 32px;
+    font-size: .9em;
+  }
+
+  .trafico-escravos {
+    width: 558px;
+    float: left;
+    margin-left: 68px;
+    margin-top: -26px;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-color: $verde;
+      top: 80px;
+      left: -28px;
+      width: 105%;
+      display: block;
+      height: 203px;
+      position: absolute;
+    }
+
+    a {
+      position: relative;
+      z-index: 2;
+    }
+
+    p {
+      width: 200px;
+      position: absolute;
+      right: 16px;
+      top: 170px;
+      font-size: 1.3em;
+    }
+  }
+
+  .pau-brasil-03 {
+    width: 290px;
+    float: right;
+    margin-right: 26px;
+    margin-top: -14px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .texto03 {
+    width: 462px;
+    float: left;
+    margin-left: 82px;
+    margin-top: 24px;
+  }
+
+  .tracejado06 {
+    position: absolute;
+    width: 523px;
+    height: 2px;
+    margin-top: 1245px;
+    margin-left: 90px;
+    @include path('pag03/tracejado-06.png');
+  }
+
+  .jesuitas {
+    width: 440px;
+    float: right;
+    margin-top: 11px;
+    margin-right: -15px;
+  }
+
+  .texto04 {
+    width: 448px;
+    float: left;
+    margin-top: 52px;
+    margin-left: 82px;
+  }
+
+  .tracejado03 {
+    width: 447px;
+    height: 66px;
+    margin-top: 1316px;
+    margin-left: 170px;
+    position: absolute;
+    @include path('pag03/tracejado-03.png');
+  }
+
+  .marques-pombal {
+    width: 471px;
+    float: right;
+    margin-top: 89px;
+    margin-right: -19px;
+
+    .group {
+      background-color: $azul;
+      height: 140px;
+      position: relative;
+      margin-bottom: 40px;
+
+      a {
+        float: left;
+        margin-top: -13px;
+        margin-left: -40px;
+      }
+
+      p {
+        font-size: 1.3em;
+        padding: 16px 10px 16px 0;
+      }
+    }
+  }
+
+  .texto05 {
+    clear: both;
+    display: inline-block;
+    margin-left: 80px;
+  }
+
+  .texto06 {
+    background-color: $azul;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: 30px;
+  }
+
+}
