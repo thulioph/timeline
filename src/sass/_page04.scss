@@ -1,0 +1,141 @@
+// ====================
+// Pages Internal
+// ====================
+
+.pag04 {
+
+  .title-primary {
+    font-size: 4em;
+  }
+
+  .texto01 {
+    width: 440px;
+    float: left;
+    margin-left: 68px;
+    margin-top: -5px;
+  }
+
+  .tracejado01 {
+    position: absolute;
+    width: 623px;
+    height: 2px;
+    margin-top: 140px;
+    margin-left: 270px;
+    @include path('pag04/tracejado-01.png');
+  }
+
+  .cartaz {
+    width: 484px;
+    float: right;
+    margin-top: 22px;
+    position: relative;
+    background-color: $azul;
+
+    a {
+      float: left;
+      margin-top: -10px;
+    }
+
+    p {
+      width: 290px;
+      font-size: 1.4em;
+      margin-top: 32px;
+      float: right;
+    }
+  }
+
+  .marques-pombal {
+    width: 360px;
+    margin-left: 43px;
+    margin-top: 11px;
+    float: left;
+  }
+
+  .tracejado02 {
+    position: absolute;
+    width: 175px;
+    height: 2px;
+    @include path('pag04/tracejado-02.png');
+  }
+
+  .expulsao-jesuitas {
+    width: 350px;
+    float: left;
+    margin-left: 16px;
+    margin-top: 60px;
+
+    p {
+      font-size: 1.2em;
+    }
+
+    a {
+      margin-left: 51px;
+      margin-top: -7px;
+    }
+  }
+
+  .d-jose {
+    width: 249px;
+    float: right;
+
+    a {
+      margin-top: 34px;
+      margin-left: 57px;
+    }
+
+    p {
+      font-style: italic;
+      margin-top: 20px;
+    }
+  }
+
+  .texto02 {
+    width: 445px;
+    float: left;
+    margin-left: 68px;
+    margin-top: 74px;
+  }
+
+  .botocudos {
+    width: 470px;
+    float: right;
+    margin-top: 70px;
+    margin-right: -6px;
+
+    p {
+      padding: 7px;
+      background-color: $azul;
+    }
+  }
+
+  .texto03 {
+    float: left;
+    width: 460px;
+    margin-top: 13px;
+    margin-left: 80px;
+
+    p {
+      &:nth-child(1) {
+        font-weight: bold;
+      }
+
+      &:nth-child(2) {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  .danca-tapuias {
+    width: 403px;
+    float: right;
+    margin-top: -158px;
+    margin-right: 50px;
+  }
+
+  .texto04 {
+    clear: both;
+    display: inline-block;
+    margin-left: 80px;
+  }
+
+}
