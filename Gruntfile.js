@@ -38,6 +38,7 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
+          sourcemap: 'none',
           cwd: 'src/',
           src: 'sass/*.scss',
           dest: 'src/css/',
@@ -103,13 +104,13 @@ module.exports = function(grunt) {
       },
 
       options: {
-        host: '177.95.199.42', // Definindo um IP manualmente
+        host: '192.168.1.64', // Definindo um IP manualmente
         watchTask: true, // Integração com a taks watch
         ghostMode: { //Sincronizando os eventos entre os dispositivos
           clicks: true,
-          scroll: true,
-          links: true,
-          forms: true
+          location: true,
+          forms: true,
+          scroll: true
         }
       }
     }
@@ -117,8 +118,8 @@ module.exports = function(grunt) {
   });
 
   // registrando tarefa default
-  grunt.registerTask( 'default', [ 'watch' ] );
-  // grunt.registerTask( 'default', [ 'browserSync', 'watch' ] );
+  // grunt.registerTask( 'default', [ 'watch' ] );
+  grunt.registerTask( 'default', [ 'browserSync', 'watch' ] );
   grunt.registerTask( 'img', [ 'clean', 'imagemin' ] );
 
   // grunt.registerTask( 'src', [ 'compass:dist', 'concat:js', 'concat:css' ] );
