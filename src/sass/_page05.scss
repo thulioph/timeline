@@ -1,0 +1,188 @@
+// ====================
+// Pages Internal
+// ====================
+
+.pag05 {
+
+  .texto01 {
+    width: 420px;
+    float: left;
+    margin-left: 52px;
+    margin-top: -10px;
+
+    p {
+      &:nth-child(2) {
+        width: 276px;
+      }
+    }
+  }
+
+  .tracejado01 {
+    position: absolute;
+    width: 436px;
+    height: 41px;
+    margin-top: 10px;
+    margin-left: 279px;
+    @include path('pag05/tracejado-01.png');
+  }
+
+  .independencia {
+    width: 470px;
+    float: right;
+    margin-top: 35px;
+    margin-right: 10px;
+    position: relative;
+    z-index: 4;
+
+    a {
+      position: absolute;
+      margin-top: 141px;
+      margin-left: -671px;
+    }
+
+    p {
+      background-color: $azul;
+      padding: 0 10px 10px 10px;
+      font-size: 1.3em;
+
+      &:nth-child(1) {
+        float: left;
+      }
+
+      &:nth-child(2) {
+        float: right;
+        width: 230px;
+        padding: 0 0 0 30px;
+      }
+    }
+  }
+
+  .tracejado06 {
+    position: absolute;
+    width: 483px;
+    height: 2px;
+    margin-left: 530px;
+    margin-top: 351px;
+    @include path('pag05/tracejado-06.png');
+  }
+
+  .tracejado07 {
+    position: absolute;
+    width: 145px;
+    height: 115px;
+    margin-left: 727px;
+    margin-top: 398px;
+    @include path('pag05/tracejado-07.png');
+  }
+
+  .proclamacao {
+    width: 470px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 85px;
+    position: relative;
+    z-index: 4;
+
+    a {
+      position: relative;
+      z-index: 4;
+
+      &:nth-child(1) {
+        margin-top: 38px;
+        margin-left: 188px;
+      }
+
+      &:nth-child(2) {
+        margin-top: -62px;
+        margin-left: -18px;
+      }
+    }
+  }
+
+  .tracejado08 {
+    position: absolute;
+    width: 145px;
+    height: 115px;
+    margin-top: -100px;
+    margin-left: 130px;
+    @include path('pag05/tracejado-08.png');
+  }
+
+  .tracejado03 {
+    position: absolute;
+    width: 195px;
+    height: 96px;
+    margin-left: 50px;
+    @include path('pag05/tracejado-03.png');
+  }
+
+  .texto02 {
+    width: 326px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 100px;
+
+    p {
+      font-size: 1.3em;
+    }
+  }
+
+  .tracejado04 {
+    position: absolute;
+    width: 110px;
+    height: 236px;
+    margin-top: 135px;
+    margin-left: 306px;
+    @include path('pag05/tracejado-04.png');
+  }
+
+  .tracejado05 {
+    position: absolute;
+    width: 133px;
+    height: 157px;
+    right: 110px;
+    margin-top: -140px;
+    @include path('pag05/tracejado-05.png');
+  }
+
+  .texto03 {
+    background-color: $verde;
+    width: 383px;
+    float: right;
+    margin-top: 18px;
+    padding: 20px 20px;
+    margin-right: 10px;
+
+    p {
+      font-size: 1.3em;
+    }
+  }
+
+  .mapa {
+    width: 505px;
+    margin-left: 70px;
+    float: left;
+    margin-top: 45px;
+  }
+
+  .tracejado02 {
+    width: 133px;
+    height: 178px;
+    position: absolute;
+    margin-left: 690px;
+    margin-top: 253px;
+    @include path('pag05/tracejado-02.png');
+  }
+
+  .texto04 {
+    width: 247px;
+    float: right;
+    margin-right: 140px;
+    margin-top: 430px;
+
+    p {
+      font-size: 1.3em;
+    }
+  }
+
+}
