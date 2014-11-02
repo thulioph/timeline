@@ -1,0 +1,171 @@
+// ====================
+// Pages Internal
+// ====================
+
+.pag07 {
+
+  .title-primary {
+    font-size: 3em;
+  }
+
+  .texto01 {
+    width: 442px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 79px;
+  }
+
+  .tracejado01 {
+    position: absolute;
+    width: 392px;
+    height: 30px;
+    margin-top: 71px;
+    margin-left: 339px;
+    @include path('pag07/tracejado-01.png');
+  }
+
+  .tracejado02 {
+    position: absolute;
+    width: 170px;
+    height: 280px;
+    margin-top: 132px;
+    margin-left: 54px;
+    @include path('pag07/tracejado-02.png');
+  }
+
+  .getulio {
+    width: 483px;
+    float: right;
+    margin-right: -14px;
+    position: relative;
+
+    .bg {
+      background-color: $azul;
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: 540px;
+      margin-top: 280px;
+      margin-left: 5px;
+    }
+
+    a {
+      margin-top: 93px;
+      position: relative;
+      z-index: 4;
+    }
+
+    p {
+      margin-top: -15px;
+      font-size: 1.3em;
+      margin-left: 13px;
+      padding: 20px;
+      position: relative;
+      z-index: 4;
+    }
+  }
+
+  .tracejado04 {
+    position: absolute;
+    width: 2px;
+    height: 121px;
+    right: 230px;
+    margin-top: 770px;
+    @include path('pag07/tracejado-04.png');
+  }
+
+  .tracejado03 {
+    width: 237px;
+    height: 380px;
+    position: absolute;
+    margin-top: 675px;
+    margin-left: 60px;
+    @include path('pag07/tracejado-03.png');
+  }
+
+  .marcha {
+    width: 443px;
+    float: left;
+    margin-left: 70px;
+    margin-top: 22px;
+
+    a {
+      margin-left: 62px;
+    }
+
+    p {
+      margin-top: 30px;
+      margin-left: 10px;
+    }
+  }
+
+  .eduardo-galvao {
+    width: 388px;
+    margin-top: 18px;
+    float: left;
+    margin-left: 85px;
+  }
+
+  .getulio-karaja {
+    width: 315px;
+    float: right;
+    margin-right: 75px;
+    margin-top: 19px;
+  }
+
+  .tracejado05 {
+    position: absolute;
+    width: 326px;
+    height: 206px;
+    margin-top: 350px;
+    margin-left: 310px;
+    @include path('pag07/tracejado-05.png');
+  }
+
+  .darcy-ribeiro {
+    width: 503px;
+    float: left;
+    margin-left: 35px;
+    height: 145px;
+    margin-top: 240px;
+    background-color: $verde;
+
+    a {
+      margin-top: -171px;
+      float: left;
+    }
+
+    p {
+      float: right;
+      width: 230px;
+      margin-top: 10px;
+      font-size: 1.3em;
+    }
+  }
+
+  .darcy-ribeiro-indios {
+    width: 444px;
+    float: right;
+    margin-top: 60px;
+    margin-right: -11px;
+    position: relative;
+    z-index: 4;
+  }
+
+  .texto02 {
+    p {
+      &:nth-child(1) {
+        width: 460px;
+        margin-top: 28px;
+        float: left;
+        margin-left: 79px;
+      }
+
+      &:nth-child(2) {
+        float: left;
+        margin-left: 80px;
+      }
+    }
+  }
+
+}
