@@ -91,3 +91,26 @@ $title-period: $lithos-regular;
     color: $yellow;
   }
 }
+
+// Tracejados
+@mixin path ($rulers...) {
+  background: url('../../src/images/'+$rulers) no-repeat;
+}
+
+
+// ====================
+// Functions
+// ====================
+
+@function convertPx($target, $parent: 1024) {
+  @return percentage($target / $parent);
+}
+
+
+
+// ====================
+// Pages Internal
+// ====================
+
+$azul: rgb(191, 218, 215);
+$verde: rgb(154, 179, 131);
