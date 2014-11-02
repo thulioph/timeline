@@ -1325,4 +1325,111 @@ p {
   .pag05 .texto04 p {
     font-size: 1.3em; }
 
+.pag06 .texto01 {
+  width: 450px;
+  float: left;
+  margin-left: 85px;
+  margin-top: -10px; }
+.pag06 .tracejado01 {
+  position: absolute;
+  width: 463px;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 269px;
+  background: url("../../src/images/pag06/tracejado-01.png") no-repeat; }
+.pag06 .tracejado02 {
+  position: absolute;
+  width: 463px;
+  height: 77px;
+  margin-top: 158px;
+  margin-left: 193px;
+  background: url("../../src/images/pag06/tracejado-02.png") no-repeat; }
+.pag06 .auguste-comte {
+  width: 495px;
+  float: right;
+  margin-right: -20px;
+  margin-top: 3px; }
+  .pag06 .auguste-comte p {
+    font-size: 1.3em;
+    margin-top: 60px;
+    width: 340px;
+    margin-left: 120px; }
+  .pag06 .auguste-comte .group p {
+    margin-top: 10px;
+    padding: 16px;
+    width: 418px;
+    margin-left: 50px;
+    background-color: #bfdad7; }
+  .pag06 .auguste-comte .group a {
+    float: left;
+    position: relative;
+    z-index: 4;
+    margin-left: 12px;
+    margin-top: -12px; }
+.pag06 .tracejado05 {
+  position: absolute;
+  width: 483px;
+  height: 2px;
+  right: -20px;
+  margin-top: 390px;
+  background: url("../../src/images/pag06/tracejado-05.png") no-repeat; }
+.pag06 .tracejado03 {
+  width: 196px;
+  height: 2px;
+  position: absolute;
+  margin-top: 534px;
+  margin-left: 427px;
+  background: url("../../src/images/pag06/tracejado-03.png") no-repeat; }
+.pag06 .tribo-bororos {
+  width: 475px;
+  float: right;
+  margin-top: 40px;
+  margin-right: 10px;
+  position: relative;
+  z-index: 4; }
+.pag06 .demarcacao-terras {
+  float: left;
+  width: 503px;
+  margin-top: 48px;
+  margin-left: 42px;
+  position: relative;
+  z-index: 4; }
+.pag06 .tracejado04 {
+  position: absolute;
+  width: 483px;
+  height: 2px;
+  right: -20px;
+  margin-top: 820px;
+  background: url("../../src/images/pag06/tracejado-04.png") no-repeat; }
+.pag06 .texto02 {
+  width: 394px;
+  float: right;
+  margin-top: 50px;
+  margin-right: 26px; }
+.pag06 .tracejado06 {
+  position: absolute;
+  width: 390px;
+  height: 232px;
+  bottom: 120px;
+  margin-left: 160px;
+  background: url("../../src/images/pag06/tracejado-06.png") no-repeat; }
+.pag06 .rondon {
+  width: 505px;
+  float: right;
+  margin-right: -442px;
+  height: 145px;
+  margin-top: 116px;
+  position: relative;
+  z-index: 4;
+  background-color: #9ab383; }
+  .pag06 .rondon p {
+    float: left;
+    width: 240px;
+    font-size: 1.3em;
+    padding: 20px; }
+  .pag06 .rondon a {
+    margin-top: -100px;
+    float: right;
+    margin-right: 10px; }
+
 /*# sourceMappingURL=main.css.map */
