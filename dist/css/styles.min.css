@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -549,21 +550,21 @@ ul {
 li {
   list-style-type: none; }
 
+figure {
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+.clear {
+  clear: both; }
+
 .main {
   display: block;
   width: 100%;
   height: 100%;
   position: relative;
   top: 0; }
-  .main .content {
-    width: 90%;
-    height: 100%;
-    padding: 10px 20px 80px 20px;
-    position: relative;
-    margin: 0 auto;
-    background-color: #f3ead2; }
-    .main .content.js-padding {
-      padding-bottom: 190px; }
 
 .header-primary {
   width: 100%;
@@ -706,14 +707,25 @@ li {
     opacity: 1;
     top: -200px; }
 
-.content figure {
-  text-align: center; }
-.content p {
-  font-size: 1.8em;
-  text-align: justify;
-  color: #333333;
-  line-height: 1.4em;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+.content {
+  max-width: 1024px;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0 80px 0;
+  position: relative;
+  margin: 0 auto;
+  display: table;
+  background-color: #f3ead2; }
+  .content.js-padding {
+    padding-bottom: 190px; }
+  .content figure {
+    text-align: center; }
+  .content p {
+    font-size: 1.8em;
+    text-align: left;
+    color: #333333;
+    line-height: 1.4em;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
 
 .ribbon {
   position: fixed;
@@ -765,100 +777,424 @@ li {
     right: -17.5px;
     bottom: 27px; }
 
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  .img-link figcaption {
-    font-size: 1em; } }
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .img-link figcaption {
-    font-size: 1em; }
+.page-internal .title-primary {
+  color: #96b6b3;
+  font-size: 4.5em;
+  text-align: center;
+  margin: 30px auto 40px auto;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: "LithosPro850"; }
+.page-internal p {
+  font-size: 1.5em; }
+.page-internal span {
+  color: #990000; }
+.page-internal a {
+  display: inline-block; }
 
-  .text-complementary {
-    height: 190px;
-    width: 90px; }
-    .text-complementary.js-show {
-      top: -270px; } }
+/* iPad - em pé ----------- */
+/* iPad - deitado ----------- */
 /* Desktops and laptops ----------- */
-.page-internal {
+.pag02 .text01 {
+  width: 467px;
+  float: left;
+  margin-top: 22px;
+  margin-left: 68px; }
+.pag02 .tracejado01 {
+  width: 499px;
+  height: 55px;
+  margin-top: 84px;
+  margin-left: 311px;
+  position: absolute;
+  background: url("../../src/images/pag02/tracejado-01.png") no-repeat; }
+.pag02 .tracejado02 {
+  position: absolute;
+  width: 457px;
+  height: 1292px;
+  margin-top: 168px;
+  margin-left: 39px;
+  background: url("../../src/images/pag02/tracejado-02.png") no-repeat; }
+.pag02 .pedro {
+  width: 470px;
+  float: right;
+  margin-top: 80px;
+  margin-right: 10px;
   position: relative; }
-  .page-internal .title-primary {
-    color: #96b6b3;
-    font-size: 4em;
-    text-align: center;
-    margin: .3em auto 40px auto;
-    text-transform: uppercase;
-    font-family: "LithosPro850"; }
-  .page-internal p {
-    font-size: 1.6em !important; }
-  .page-internal span {
-    color: #990000; }
-    .page-internal span.tracejado-01 {
-      width: 499px;
-      height: 55px;
-      position: absolute;
-      background: url("../../src/images/pag01/tracejado-01.png");
-      background-repeat: no-repeat;
-      top: 138px;
-      left: 380px; }
-  .page-internal .left {
-    float: left; }
-  .page-internal .right {
-    float: right; }
-  .page-internal .clear {
-    clear: both; }
-  .page-internal .color1 {
-    background-color: #bfdad7;
-    padding: 10px; }
-  .page-internal .color2 {
-    background-color: #99b283;
-    padding: 10px; }
-  .page-internal .texto-mapa-01 {
-    width: 320px;
-    margin-left: -30px;
-    margin-top: 10px; }
-  .page-internal .image-mapa-01 {
-    margin-top: -60px;
-    position: relative;
+  .pag02 .pedro a {
+    margin-left: 15px;
     z-index: 3;
-    left: -30px; }
-  .page-internal .texto-mapa-02 {
-    width: 200px;
-    position: relative;
-    padding-left: 100px;
-    top: -90px;
-    right: -90px;
-    z-index: 1; }
-  .page-internal .image-caveira {
-    margin-left: -200px;
-    z-index: 10;
     position: relative; }
-  .page-internal .texto-caveira {
-    padding: 10px 10px 10px 200px;
-    position: relative;
-    z-index: 8;
-    margin-top: -150px;
-    margin-left: -10px; }
-  .page-internal .image-luzia-principal {
-    left: 340px;
-    top: -250px;
-    position: relative;
-    display: inline-block; }
-  .page-internal .serra-capivara {
-    margin-top: -620px; }
-  .page-internal .texto-serra-capivara {
-    width: 220px;
-    float: right;
-    right: 10px;
-    position: relative; }
-  .page-internal .arte-serra-capivara {
-    top: -280px;
-    position: relative;
-    left: -160px; }
-  .page-internal .putaquepariu {
-    display: inline-block;
+  .pag02 .pedro p {
+    background-color: #bfdad7;
+    width: 180px;
+    text-align: left;
     position: absolute;
-    left: 410px;
-    top: 1050px; }
+    right: 0px;
+    top: 110px;
+    padding: 20px 20px 20px 50px;
+    font-size: 1.2em;
+    z-index: 2; }
+.pag02 .mapa-indio {
+  width: 530px;
+  margin-top: -95px;
+  float: left;
+  margin-left: 72px;
+  position: relative; }
+  .pag02 .mapa-indio a:nth-child(2) {
+    margin-top: 160px;
+    margin-left: -50px;
+    position: absolute; }
+.pag02 .caravela {
+  width: 350px;
+  float: right;
+  margin-top: 25px;
+  position: relative;
+  z-index: 4; }
+  .pag02 .caravela a:nth-child(1) {
+    margin-bottom: 75px;
+    margin-left: 70px; }
+.pag02 .tracejado03 {
+  width: 319px;
+  height: 397px;
+  right: 28px;
+  margin-top: 345px;
+  position: absolute;
+  z-index: 2;
+  background: url("../../src/images/pag02/tracejado-03.png") no-repeat; }
+.pag02 .texto02 {
+  width: 465px;
+  margin-top: 60px;
+  margin-left: 70px;
+  float: left;
+  position: relative; }
+  .pag02 .texto02 .curt {
+    width: 220px;
+    height: 100px;
+    position: relative;
+    margin-top: 30px;
+    margin-left: -58px;
+    background-color: #9ab383; }
+    .pag02 .texto02 .curt .curt-texto {
+      padding-right: 60px;
+      padding-left: 12px;
+      font-size: 1.2em; }
+    .pag02 .texto02 .curt .curt-link {
+      position: absolute;
+      right: -95px;
+      top: -67px; }
+.pag02 .tracejado4 {
+  width: 319px;
+  height: 2px;
+  bottom: 130px;
+  left: 300px;
+  z-index: 2;
+  position: absolute;
+  background: url("../../src/images/pag02/tracejado-04.png") no-repeat; }
+.pag02 .mapa {
+  width: 450px;
+  float: right;
+  margin-top: 155px;
+  margin-right: 25px;
+  z-index: 4;
+  position: relative; }
+
+.pag03 .texto01 {
+  width: 455px;
+  margin-left: 82px;
+  margin-top: -10px;
+  float: left; }
+.pag03 .tracejado01 {
+  width: 623px;
+  height: 2px;
+  margin-top: 95px;
+  margin-left: 80px;
+  position: absolute;
+  background: url("../../src/images/pag03/tracejado-01.png") no-repeat; }
+.pag03 .tracejado02 {
+  width: 122px;
+  height: 206px;
+  margin-top: 158px;
+  margin-left: 422px;
+  position: absolute;
+  background: url("../../src/images/pag03/tracejado-02.png") no-repeat; }
+.pag03 .tome-souza {
+  width: 398px;
+  float: right;
+  margin-top: -34px;
+  margin-right: -20px;
+  position: relative; }
+  .pag03 .tome-souza a {
+    position: relative;
+    z-index: 4; }
+  .pag03 .tome-souza p {
+    width: 155px;
+    position: absolute;
+    right: 0;
+    top: 87px;
+    padding: 18px 20px 30px 40px;
+    font-size: 1.2em;
+    background-color: #bfdad7; }
+.pag03 .pau-brasil-01 {
+  width: 260px;
+  float: left;
+  margin-top: 30px;
+  margin-left: 84px;
+  position: relative;
+  z-index: 2; }
+.pag03 .tracejado04 {
+  position: absolute;
+  width: 186px;
+  height: 105px;
+  margin-top: 293px;
+  margin-left: 260px;
+  background: url("../../src/images/pag03/tracejado-04.png") no-repeat; }
+.pag03 .pau-brasil-02 {
+  width: 345px;
+  float: left;
+  margin-left: 27px;
+  margin-top: 11px;
+  position: relative;
+  z-index: 2; }
+.pag03 .tracejado05 {
+  position: absolute;
+  width: 255px;
+  height: 259px;
+  margin-top: 420px;
+  margin-left: 630px;
+  background: url("../../src/images/pag03/tracejado-05.png") no-repeat; }
+.pag03 .texto02 {
+  width: 240px;
+  float: right;
+  margin-top: 87px;
+  margin-right: 32px;
+  font-size: .9em; }
+.pag03 .trafico-escravos {
+  width: 558px;
+  float: left;
+  margin-left: 68px;
+  margin-top: -26px;
+  position: relative; }
+  .pag03 .trafico-escravos::before {
+    content: '';
+    background-color: #9ab383;
+    top: 80px;
+    left: -28px;
+    width: 105%;
+    display: block;
+    height: 203px;
+    position: absolute; }
+  .pag03 .trafico-escravos a {
+    position: relative;
+    z-index: 2; }
+  .pag03 .trafico-escravos p {
+    width: 200px;
+    position: absolute;
+    right: 16px;
+    top: 170px;
+    font-size: 1.3em; }
+.pag03 .pau-brasil-03 {
+  width: 290px;
+  float: right;
+  margin-right: 26px;
+  margin-top: -14px;
+  position: relative;
+  z-index: 2; }
+.pag03 .texto03 {
+  width: 462px;
+  float: left;
+  margin-left: 82px;
+  margin-top: 24px; }
+.pag03 .tracejado06 {
+  position: absolute;
+  width: 523px;
+  height: 2px;
+  margin-top: 1245px;
+  margin-left: 90px;
+  background: url("../../src/images/pag03/tracejado-06.png") no-repeat; }
+.pag03 .jesuitas {
+  width: 440px;
+  float: right;
+  margin-top: 11px;
+  margin-right: -15px; }
+.pag03 .texto04 {
+  width: 448px;
+  float: left;
+  margin-top: 52px;
+  margin-left: 82px; }
+.pag03 .tracejado03 {
+  width: 447px;
+  height: 66px;
+  margin-top: 1316px;
+  margin-left: 170px;
+  position: absolute;
+  background: url("../../src/images/pag03/tracejado-03.png") no-repeat; }
+.pag03 .marques-pombal {
+  width: 471px;
+  float: right;
+  margin-top: 89px;
+  margin-right: -19px; }
+  .pag03 .marques-pombal .group {
+    background-color: #bfdad7;
+    height: 140px;
+    position: relative;
+    margin-bottom: 40px; }
+    .pag03 .marques-pombal .group a {
+      float: left;
+      margin-top: -13px;
+      margin-left: -40px; }
+    .pag03 .marques-pombal .group p {
+      font-size: 1.3em;
+      padding: 16px 10px 16px 0; }
+.pag03 .texto05 {
+  clear: both;
+  display: inline-block;
+  margin-left: 80px; }
+.pag03 .texto06 {
+  background-color: #bfdad7;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 40px;
+  padding: 30px; }
+
+.pag04 .title-primary {
+  font-size: 4em; }
+.pag04 .texto01 {
+  width: 440px;
+  float: left;
+  margin-left: 68px;
+  margin-top: -5px; }
+.pag04 .tracejado01 {
+  position: absolute;
+  width: 623px;
+  height: 2px;
+  margin-top: 140px;
+  margin-left: 270px;
+  background: url("../../src/images/pag04/tracejado-01.png") no-repeat; }
+.pag04 .cartaz {
+  width: 484px;
+  float: right;
+  margin-top: 22px;
+  position: relative;
+  background-color: #bfdad7; }
+  .pag04 .cartaz a {
+    float: left;
+    margin-top: -10px; }
+  .pag04 .cartaz p {
+    width: 290px;
+    font-size: 1.4em;
+    margin-top: 32px;
+    float: right; }
+.pag04 .tracejado08 {
+  width: 483px;
+  height: 2px;
+  position: absolute;
+  margin-left: 545px;
+  margin-top: 352px;
+  background: url("../../src/images/pag04/tracejado-08.png") no-repeat; }
+.pag04 .marques-pombal {
+  width: 360px;
+  margin-left: 43px;
+  margin-top: 11px;
+  float: left;
+  position: relative;
+  z-index: 4; }
+.pag04 .tracejado07 {
+  width: 230px;
+  height: 2px;
+  position: absolute;
+  margin-top: 321px;
+  margin-left: 290px;
+  background: url("../../src/images/pag04/tracejado-07.png") no-repeat; }
+.pag04 .expulsao-jesuitas {
+  width: 350px;
+  float: left;
+  margin-left: 16px;
+  margin-top: 60px;
+  position: relative;
+  z-index: 4; }
+  .pag04 .expulsao-jesuitas p {
+    font-size: 1.2em; }
+  .pag04 .expulsao-jesuitas a {
+    margin-left: 51px;
+    margin-top: -7px; }
+.pag04 .tracejado02 {
+  position: absolute;
+  width: 175px;
+  height: 2px;
+  margin-top: 91px;
+  margin-left: 660px;
+  background: url("../../src/images/pag04/tracejado-02.png") no-repeat; }
+.pag04 .tracejado03 {
+  width: 238px;
+  height: 2px;
+  position: absolute;
+  margin-top: 123px;
+  margin-left: 296px;
+  background: url("../../src/images/pag04/tracejado-03.png") no-repeat; }
+.pag04 .d-jose {
+  width: 249px;
+  float: right; }
+  .pag04 .d-jose a {
+    margin-top: 34px;
+    margin-left: 57px; }
+  .pag04 .d-jose p {
+    font-style: italic;
+    margin-top: 20px; }
+.pag04 .tracejado06 {
+  width: 483px;
+  height: 2px;
+  position: absolute;
+  margin-top: 449px;
+  margin-left: 25px;
+  background: url("../../src/images/pag04/tracejado-06.png") no-repeat; }
+.pag04 .texto02 {
+  width: 455px;
+  float: left;
+  margin-left: 68px;
+  margin-top: 74px; }
+.pag04 .tracejado04 {
+  width: 235px;
+  height: 2px;
+  position: absolute;
+  margin-top: 794px;
+  margin-left: 438px;
+  background: url("../../src/images/pag04/tracejado-04.png") no-repeat; }
+.pag04 .botocudos {
+  width: 470px;
+  float: right;
+  margin-top: 70px;
+  margin-right: -6px;
+  z-index: 3;
+  position: relative; }
+  .pag04 .botocudos p {
+    padding: 7px;
+    background-color: #bfdad7; }
+.pag04 .texto03 {
+  float: left;
+  width: 460px;
+  margin-top: 13px;
+  margin-left: 80px; }
+  .pag04 .texto03 p:nth-child(1) {
+    font-weight: bold; }
+  .pag04 .texto03 p:nth-child(2) {
+    margin-top: 12px; }
+.pag04 .tracejado05 {
+  width: 547px;
+  height: 119px;
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 80px;
+  background: url("../../src/images/pag04/tracejado-05.png") no-repeat; }
+.pag04 .danca-tapuias {
+  width: 403px;
+  float: right;
+  margin-top: -158px;
+  margin-right: 50px;
+  position: relative;
+  z-index: 3; }
+.pag04 .texto04 {
+  clear: both;
+  display: inline-block;
+  margin-left: 80px; }
 
 /*# sourceMappingURL=main.css.map */

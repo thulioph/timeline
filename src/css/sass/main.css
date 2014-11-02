@@ -1084,26 +1084,53 @@ p {
     font-size: 1.4em;
     margin-top: 32px;
     float: right; }
+.pag04 .tracejado08 {
+  width: 483px;
+  height: 2px;
+  position: absolute;
+  margin-left: 545px;
+  margin-top: 352px;
+  background: url("../../src/images/pag04/tracejado-08.png") no-repeat; }
 .pag04 .marques-pombal {
   width: 360px;
   margin-left: 43px;
   margin-top: 11px;
-  float: left; }
-.pag04 .tracejado02 {
-  position: absolute;
-  width: 175px;
+  float: left;
+  position: relative;
+  z-index: 4; }
+.pag04 .tracejado07 {
+  width: 230px;
   height: 2px;
-  background: url("../../src/images/pag04/tracejado-02.png") no-repeat; }
+  position: absolute;
+  margin-top: 321px;
+  margin-left: 290px;
+  background: url("../../src/images/pag04/tracejado-07.png") no-repeat; }
 .pag04 .expulsao-jesuitas {
   width: 350px;
   float: left;
   margin-left: 16px;
-  margin-top: 60px; }
+  margin-top: 60px;
+  position: relative;
+  z-index: 4; }
   .pag04 .expulsao-jesuitas p {
     font-size: 1.2em; }
   .pag04 .expulsao-jesuitas a {
     margin-left: 51px;
     margin-top: -7px; }
+.pag04 .tracejado02 {
+  position: absolute;
+  width: 175px;
+  height: 2px;
+  margin-top: 91px;
+  margin-left: 660px;
+  background: url("../../src/images/pag04/tracejado-02.png") no-repeat; }
+.pag04 .tracejado03 {
+  width: 238px;
+  height: 2px;
+  position: absolute;
+  margin-top: 123px;
+  margin-left: 296px;
+  background: url("../../src/images/pag04/tracejado-03.png") no-repeat; }
 .pag04 .d-jose {
   width: 249px;
   float: right; }
@@ -1113,16 +1140,32 @@ p {
   .pag04 .d-jose p {
     font-style: italic;
     margin-top: 20px; }
+.pag04 .tracejado06 {
+  width: 483px;
+  height: 2px;
+  position: absolute;
+  margin-top: 449px;
+  margin-left: 25px;
+  background: url("../../src/images/pag04/tracejado-06.png") no-repeat; }
 .pag04 .texto02 {
-  width: 445px;
+  width: 455px;
   float: left;
   margin-left: 68px;
   margin-top: 74px; }
+.pag04 .tracejado04 {
+  width: 235px;
+  height: 2px;
+  position: absolute;
+  margin-top: 794px;
+  margin-left: 438px;
+  background: url("../../src/images/pag04/tracejado-04.png") no-repeat; }
 .pag04 .botocudos {
   width: 470px;
   float: right;
   margin-top: 70px;
-  margin-right: -6px; }
+  margin-right: -6px;
+  z-index: 3;
+  position: relative; }
   .pag04 .botocudos p {
     padding: 7px;
     background-color: #bfdad7; }
@@ -1135,11 +1178,20 @@ p {
     font-weight: bold; }
   .pag04 .texto03 p:nth-child(2) {
     margin-top: 12px; }
+.pag04 .tracejado05 {
+  width: 547px;
+  height: 119px;
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 80px;
+  background: url("../../src/images/pag04/tracejado-05.png") no-repeat; }
 .pag04 .danca-tapuias {
   width: 403px;
   float: right;
   margin-top: -158px;
-  margin-right: 50px; }
+  margin-right: 50px;
+  position: relative;
+  z-index: 3; }
 .pag04 .texto04 {
   clear: both;
   display: inline-block;

@@ -44,18 +44,31 @@
     }
   }
 
+  .tracejado08 {
+    width: 483px;
+    height: 2px;
+    position: absolute;
+    margin-left: 545px;
+    margin-top: 352px;
+    @include path('pag04/tracejado-08.png');
+  }
+
   .marques-pombal {
     width: 360px;
     margin-left: 43px;
     margin-top: 11px;
     float: left;
+    position: relative;
+    z-index: 4;
   }
 
-  .tracejado02 {
-    position: absolute;
-    width: 175px;
+  .tracejado07 {
+    width: 230px;
     height: 2px;
-    @include path('pag04/tracejado-02.png');
+    position: absolute;
+    margin-top: 321px;
+    margin-left: 290px;
+    @include path('pag04/tracejado-07.png');
   }
 
   .expulsao-jesuitas {
@@ -63,6 +76,8 @@
     float: left;
     margin-left: 16px;
     margin-top: 60px;
+    position: relative;
+    z-index: 4;
 
     p {
       font-size: 1.2em;
@@ -72,6 +87,24 @@
       margin-left: 51px;
       margin-top: -7px;
     }
+  }
+
+  .tracejado02 {
+    position: absolute;
+    width: 175px;
+    height: 2px;
+    margin-top: 91px;
+    margin-left: 660px;
+    @include path('pag04/tracejado-02.png');
+  }
+
+  .tracejado03 {
+    width: 238px;
+    height: 2px;
+    position: absolute;
+    margin-top: 123px;
+    margin-left: 296px;
+    @include path('pag04/tracejado-03.png');
   }
 
   .d-jose {
@@ -89,11 +122,29 @@
     }
   }
 
+  .tracejado06 {
+    width: 483px;
+    height: 2px;
+    position: absolute;
+    margin-top: 449px;
+    margin-left: 25px;
+    @include path('pag04/tracejado-06.png');
+  }
+
   .texto02 {
-    width: 445px;
+    width: 455px;
     float: left;
     margin-left: 68px;
     margin-top: 74px;
+  }
+
+  .tracejado04 {
+    width: 235px;
+    height: 2px;
+    position: absolute;
+    margin-top: 794px;
+    margin-left: 438px;
+    @include path('pag04/tracejado-04.png');
   }
 
   .botocudos {
@@ -101,6 +152,8 @@
     float: right;
     margin-top: 70px;
     margin-right: -6px;
+    z-index: 3;
+    position: relative;
 
     p {
       padding: 7px;
@@ -125,11 +178,22 @@
     }
   }
 
+  .tracejado05 {
+    width: 547px;
+    height: 119px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 80px;
+    @include path('pag04/tracejado-05.png');
+  }
+
   .danca-tapuias {
     width: 403px;
     float: right;
     margin-top: -158px;
     margin-right: 50px;
+    position: relative;
+    z-index: 3;
   }
 
   .texto04 {
