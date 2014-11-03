@@ -540,46 +540,6 @@ th {
   display: inline-block;
   border-right: 2px solid #f3ead2; }
 
-@keyframes fallPerspective {
-  100% {
-    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    -moz-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    -ms-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    -o-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    opacity: 1; } }
-@-webkit-keyframes fallPerspective {
-  100% {
-    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    -moz-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    -ms-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    -o-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    opacity: 1; } }
-@-moz-keyframes fallPerspective {
-  100% {
-    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    -moz-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    -ms-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    -o-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    opacity: 1; } }
-@-ms-keyframes fallPerspective {
-  100% {
-    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    -moz-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    -ms-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    -o-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    opacity: 1; } }
-@-o-keyframes fallPerspective {
-  100% {
-    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    -moz-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    -ms-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    -o-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    opacity: 1; } }
 body {
   font-size: 10px;
   background-color: #f3ead2; }
@@ -817,39 +777,20 @@ p {
     right: -17.5px;
     bottom: 27px; }
 
-.page-internal {
-  -webkit-perspective: 1300px;
-  -moz-perspective: 1300px;
-  -ms-perspective: 1300px;
-  -o-perspective: 1300px;
-  perspective: 1300px; }
-  .page-internal .anima {
-    transform-style: preserve-3d; }
-    .page-internal .anima.animate {
-      -webkit-transform: translateZ(400px) translateY(300px) rotateX(-90deg);
-      -moz-transform: translateZ(400px) translateY(300px) rotateX(-90deg);
-      -ms-transform: translateZ(400px) translateY(300px) rotateX(-90deg);
-      -o-transform: translateZ(400px) translateY(300px) rotateX(-90deg);
-      transform: translateZ(400px) translateY(300px) rotateX(-90deg);
-      -webkit-animation: fallPerspective 0.8s ease-in-out forwards;
-      -moz-animation: fallPerspective 0.8s ease-in-out forwards;
-      -ms-animation: fallPerspective 0.8s ease-in-out forwards;
-      -o-animation: fallPerspective 0.8s ease-in-out forwards;
-      animation: fallPerspective 0.8s ease-in-out forwards; }
-  .page-internal .title-primary {
-    color: #96b6b3;
-    font-size: 4.5em;
-    text-align: center;
-    margin: 30px auto 40px auto;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    font-family: "LithosPro850"; }
-  .page-internal p {
-    font-size: 1.5em; }
-  .page-internal span {
-    color: #990000; }
-  .page-internal a {
-    display: inline-block; }
+.page-internal .title-primary {
+  color: #96b6b3;
+  font-size: 4.5em;
+  text-align: center;
+  margin: 30px auto 40px auto;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: "LithosPro850"; }
+.page-internal p {
+  font-size: 1.5em; }
+.page-internal span {
+  color: #990000; }
+.page-internal a {
+  display: inline-block; }
 
 /* iPad - em pé ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
@@ -1895,7 +1836,7 @@ p {
   width: 600px;
   height: 19px;
   position: absolute;
-  bottom: 101px;
+  margin-top: 881px;
   margin-left: 290px;
   background: url("../../src/images/pag09/tracejado-02.png") no-repeat; }
 .pag09 .indios-conflito {
