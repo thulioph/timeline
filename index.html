@@ -17,6 +17,8 @@
   <!-- CSS -->
   <link rel="stylesheet" href="dist/css/styles.min.css?v=2">
   <link rel="stylesheet" href="src/js/vendor/lightbox2/css/lightbox.css">
+
+  <style> *[data-sr] { visibility: hidden; } </style>
 </head>
 <body>
 
@@ -32,7 +34,7 @@
       </div>
 
       <div id="content" class="content">
-        <figure data-sr="enter from the top and hustle 50px over 1.5s">
+        <figure>
           <img src="src/images/faixa-cultura-indigena.png" height="83" width="453" alt="Faixa com a frase Cultura Indígena">
         </figure>
 
@@ -221,7 +223,6 @@
 
   <script src="src/js/APP.js"></script>
   <script src="src/js/APP.Timeline.js"></script>
-  <script src="src/js/APP.Scroll.js"></script>
   <script src="src/js/APP.General.js"></script>
   <script src="src/js/APP.Slide.js"></script>
   <script>APP.init();</script>
