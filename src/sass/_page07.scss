@@ -12,7 +12,7 @@
     width: 442px;
     float: left;
     margin-top: 10px;
-    margin-left: 79px;
+    margin-left: 50px;
   }
 
   .tracejado01 {
@@ -20,7 +20,7 @@
     width: 392px;
     height: 30px;
     margin-top: 71px;
-    margin-left: 339px;
+    margin-left: 308px;
     @include path('pag07/tracejado-01.png');
   }
 
@@ -29,14 +29,14 @@
     width: 170px;
     height: 280px;
     margin-top: 132px;
-    margin-left: 54px;
+    margin-left: 29px;
     @include path('pag07/tracejado-02.png');
   }
 
   .getulio {
     width: 483px;
     float: right;
-    margin-right: -14px;
+    margin-right: 15px;
     position: relative;
 
     .bg {
@@ -69,7 +69,7 @@
     position: absolute;
     width: 2px;
     height: 121px;
-    right: 230px;
+    right: 260px;
     margin-top: 770px;
     @include path('pag07/tracejado-04.png');
   }
@@ -79,14 +79,14 @@
     height: 380px;
     position: absolute;
     margin-top: 675px;
-    margin-left: 60px;
+    margin-left: 40px;
     @include path('pag07/tracejado-03.png');
   }
 
   .marcha {
     width: 443px;
     float: left;
-    margin-left: 70px;
+    margin-left: 42px;
     margin-top: 22px;
 
     a {
@@ -103,13 +103,13 @@
     width: 388px;
     margin-top: 18px;
     float: left;
-    margin-left: 85px;
+    margin-left: 57px;
   }
 
   .getulio-karaja {
     width: 315px;
     float: right;
-    margin-right: 75px;
+    margin-right: 101px;
     margin-top: 19px;
   }
 
@@ -118,14 +118,14 @@
     width: 326px;
     height: 206px;
     margin-top: 350px;
-    margin-left: 310px;
+    margin-left: 250px;
     @include path('pag07/tracejado-05.png');
   }
 
   .darcy-ribeiro {
     width: 503px;
     float: left;
-    margin-left: 35px;
+    margin-left: 10px;
     height: 145px;
     margin-top: 240px;
     background-color: $verde;
@@ -147,7 +147,7 @@
     width: 444px;
     float: right;
     margin-top: 60px;
-    margin-right: -11px;
+    margin-right: 15px;
     position: relative;
     z-index: 4;
   }
@@ -158,12 +158,12 @@
         width: 460px;
         margin-top: 28px;
         float: left;
-        margin-left: 79px;
+        margin-left: 53px;
       }
 
       &:nth-child(2) {
         float: left;
-        margin-left: 80px;
+        margin-left: 51px;
       }
     }
   }

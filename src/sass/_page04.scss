@@ -11,7 +11,7 @@
   .texto01 {
     width: 440px;
     float: left;
-    margin-left: 68px;
+    margin-left: 53px;
     margin-top: -5px;
   }
 
@@ -20,7 +20,7 @@
     width: 623px;
     height: 2px;
     margin-top: 140px;
-    margin-left: 270px;
+    margin-left: 250px;
     @include path('pag04/tracejado-01.png');
   }
 
@@ -28,6 +28,7 @@
     width: 484px;
     float: right;
     margin-top: 22px;
+    margin-right: 10px;
     position: relative;
     background-color: $azul;
 
@@ -48,14 +49,14 @@
     width: 483px;
     height: 2px;
     position: absolute;
-    margin-left: 545px;
+    right: 10px;
     margin-top: 352px;
     @include path('pag04/tracejado-08.png');
   }
 
   .marques-pombal {
     width: 360px;
-    margin-left: 43px;
+    margin-left: 30px;
     margin-top: 11px;
     float: left;
     position: relative;
@@ -74,7 +75,7 @@
   .expulsao-jesuitas {
     width: 350px;
     float: left;
-    margin-left: 16px;
+    margin-left: 15px;
     margin-top: 60px;
     position: relative;
     z-index: 4;
@@ -94,7 +95,7 @@
     width: 175px;
     height: 2px;
     margin-top: 91px;
-    margin-left: 660px;
+    margin-left: 640px;
     @include path('pag04/tracejado-02.png');
   }
 
@@ -110,6 +111,7 @@
   .d-jose {
     width: 249px;
     float: right;
+    margin-right: 14px;
 
     a {
       margin-top: 34px;
@@ -119,6 +121,9 @@
     p {
       font-style: italic;
       margin-top: 20px;
+      font-size: 1.3em;
+      text-align: right;
+      margin-right: 10px;
     }
   }
 
@@ -127,14 +132,14 @@
     height: 2px;
     position: absolute;
     margin-top: 449px;
-    margin-left: 25px;
+    left: 15px;
     @include path('pag04/tracejado-06.png');
   }
 
   .texto02 {
     width: 455px;
     float: left;
-    margin-left: 68px;
+    margin-left: 52px;
     margin-top: 74px;
   }
 
@@ -143,15 +148,15 @@
     height: 2px;
     position: absolute;
     margin-top: 794px;
-    margin-left: 438px;
+    margin-left: 418px;
     @include path('pag04/tracejado-04.png');
   }
 
   .botocudos {
     width: 470px;
     float: right;
-    margin-top: 70px;
-    margin-right: -6px;
+    margin-top: 93px;
+    right: 10px;
     z-index: 3;
     position: relative;
 
@@ -165,7 +170,7 @@
     float: left;
     width: 460px;
     margin-top: 13px;
-    margin-left: 80px;
+    margin-left: 52px;
 
     p {
       &:nth-child(1) {
@@ -183,7 +188,7 @@
     height: 119px;
     position: absolute;
     margin-top: 160px;
-    margin-left: 80px;
+    margin-left: 50px;
     @include path('pag04/tracejado-05.png');
   }
 
@@ -191,7 +196,7 @@
     width: 403px;
     float: right;
     margin-top: -158px;
-    margin-right: 50px;
+    right: 63px;
     position: relative;
     z-index: 3;
   }
@@ -199,7 +204,7 @@
   .texto04 {
     clear: both;
     display: inline-block;
-    margin-left: 80px;
+    margin-left: 50px;
   }
 
 }

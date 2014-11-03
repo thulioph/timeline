@@ -79,7 +79,7 @@
     width: 470px;
     float: right;
     margin-right: 10px;
-    margin-top: 85px;
+    margin-top: 125px;
     position: relative;
     z-index: 4;
 
@@ -103,8 +103,8 @@
     position: absolute;
     width: 145px;
     height: 115px;
-    margin-top: -100px;
-    margin-left: 130px;
+    right: 228px;
+    margin-top: 643px;
     @include path('pag05/tracejado-08.png');
   }
 

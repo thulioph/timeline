@@ -7,8 +7,14 @@
   .texto01 {
     width: 450px;
     float: left;
-    margin-left: 85px;
+    margin-left: 51px;
     margin-top: -10px;
+
+    p {
+      &:nth-child(2) {
+        width: 320px;
+      }
+    }
   }
 
   .tracejado01 {
@@ -16,7 +22,7 @@
     width: 463px;
     height: 30px;
     margin-top: 30px;
-    margin-left: 269px;
+    margin-left: 237px;
     @include path('pag06/tracejado-01.png');
   }
 
@@ -25,14 +31,14 @@
     width: 463px;
     height: 77px;
     margin-top: 158px;
-    margin-left: 193px;
+    margin-left: 155px;
     @include path('pag06/tracejado-02.png');
   }
 
   .auguste-comte {
     width: 495px;
     float: right;
-    margin-right: -20px;
+    margin-right: 16px;
     margin-top: 3px;
 
     p {
@@ -66,26 +72,26 @@
     position: absolute;
     width: 483px;
     height: 2px;
-    right: -20px;
-    margin-top: 390px;
+    right: 10px;
+    margin-top: 379px;
     @include path('pag06/tracejado-05.png');
   }
 
   .tracejado03 {
-    width: 196px;
+    width: 396px;
     height: 2px;
     position: absolute;
-    margin-top: 534px;
-    margin-left: 427px;
+    margin-top: 555px;
+    margin-left: 117px;
     @include path('pag06/tracejado-03.png');
   }
 
   .tribo-bororos {
     width: 475px;
-    float: right;
-    margin-top: 40px;
-    margin-right: 10px;
-    position: relative;
+    right: 0;
+    margin-top: 421px;
+    margin-right: 141px;
+    position: absolute;
     z-index: 4;
   }
 
@@ -93,7 +99,7 @@
     float: left;
     width: 503px;
     margin-top: 48px;
-    margin-left: 42px;
+    margin-left: 22px;
     position: relative;
     z-index: 4;
   }
@@ -102,8 +108,8 @@
     position: absolute;
     width: 483px;
     height: 2px;
-    right: -20px;
-    margin-top: 820px;
+    right: 10px;
+    margin-top: 886px;
     @include path('pag06/tracejado-04.png');
   }
 
@@ -111,7 +117,7 @@
     width: 394px;
     float: right;
     margin-top: 50px;
-    margin-right: 26px;
+    margin-right: 44px;
   }
 
   .tracejado06 {
@@ -126,7 +132,7 @@
   .rondon {
     width: 505px;
     float: right;
-    margin-right: -442px;
+    right: -426px;
     height: 145px;
     margin-top: 116px;
     position: relative;
