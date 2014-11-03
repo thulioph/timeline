@@ -1745,12 +1745,111 @@ p {
   height: 19px;
   position: absolute;
   bottom: 101px;
-  margin-left: 310px;
+  margin-left: 340px;
   background: url("../../src/images/pag09/tracejado-02.png") no-repeat; }
 .pag09 .indios-conflito {
   width: 460px;
   float: right;
   margin-right: 0;
   margin-top: 68px; }
+
+.pag10 .title-primary {
+  font-size: 3.1em; }
+.pag10 .texto01 {
+  width: 445px;
+  float: left;
+  margin-left: 52px;
+  margin-top: 8px; }
+.pag10 .indios {
+  width: 465px;
+  float: right;
+  margin-top: 42px;
+  margin-right: 47px;
+  position: relative;
+  z-index: 4; }
+  .pag10 .indios a:nth-child(2) {
+    margin-top: 55px;
+    margin-left: 55px; }
+.pag10 .tracejado04 {
+  position: absolute;
+  width: 101px;
+  height: 216px;
+  right: 88px;
+  margin-top: 325px;
+  background: url("../../src/images/pag10/tracejado-04.png") no-repeat; }
+.pag10 .indios-tecnologia {
+  width: 366px;
+  float: left;
+  margin-left: 87px;
+  margin-top: 12px;
+  position: relative;
+  z-index: 4; }
+.pag10 .tracejado05 {
+  position: absolute;
+  width: 192px;
+  height: 207px;
+  margin-top: 539px;
+  left: 450px;
+  background: url("../../src/images/pag10/tracejado-05.png") no-repeat; }
+.pag10 .tracejado06 {
+  position: absolute;
+  width: 460px;
+  height: 2px;
+  right: 35px;
+  margin-top: -19px;
+  background: url("../../src/images/pag10/tracejado-06.png") no-repeat; }
+.pag10 .texto02 {
+  width: 450px;
+  float: left;
+  margin-left: 53px;
+  margin-top: 57px; }
+.pag10 .culinaria {
+  width: 470px;
+  height: 570px;
+  position: relative;
+  float: right;
+  margin-top: -4px;
+  margin-right: -4px; }
+  .pag10 .culinaria a:nth-child(1) {
+    position: absolute;
+    margin-top: 57px;
+    margin-left: -18px; }
+  .pag10 .culinaria a:nth-child(2) {
+    position: absolute;
+    right: 0;
+    margin-top: 1px;
+    margin-right: 46px; }
+  .pag10 .culinaria a:nth-child(3) {
+    margin-top: 300px;
+    margin-left: 45px; }
+.pag10 .tracejado01 {
+  position: absolute;
+  width: 66px;
+  height: 72px;
+  right: 239px;
+  margin-top: 91px;
+  background: url("../../src/images/pag10/tracejado-01.png") no-repeat; }
+.pag10 .tracejado02 {
+  position: absolute;
+  width: 403px;
+  height: 251px;
+  margin-top: 162px;
+  margin-left: 140px;
+  background: url("../../src/images/pag10/tracejado-02.png") no-repeat; }
+.pag10 .tracejado03 {
+  position: absolute;
+  width: 41px;
+  height: 127px;
+  right: 124px;
+  margin-top: 205px;
+  background: url("../../src/images/pag10/tracejado-03.png") no-repeat; }
+.pag10 .texto03 {
+  clear: both;
+  margin-top: 40px;
+  display: inline-block;
+  padding: 20px;
+  height: 170px;
+  margin-left: 10px;
+  background-color: #bfdad7; }
 
 /*# sourceMappingURL=main.css.map */
