@@ -793,7 +793,92 @@ p {
   display: inline-block; }
 
 /* iPad - em pé ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .main {
+    background-color: red; } }
 /* iPad - deitado ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .main .pag02 .text01 {
+    width: 425px; }
+  .main .pag02 .tracejado4 {
+    bottom: 180px; }
+  .main .pag03 .texto01 {
+    width: 430px; }
+  .main .pag03 .tracejado02 {
+    margin-left: 370px; }
+  .main .pag03 .texto04 {
+    width: 420px; }
+  .main .pag03 .tracejado03 {
+    margin-left: 135px;
+    margin-top: 1300px; }
+  .main .pag04 .texto01 {
+    width: 400px; }
+  .main .pag04 .expulsao-jesuitas {
+    width: 315px; }
+  .main .pag04 .tracejado02 {
+    margin-left: 625px; }
+  .main .pag04 .tracejado03 {
+    margin-left: 280px; }
+  .main .pag04 .d-jose {
+    margin-right: 30px; }
+  .main .pag04 .texto02 {
+    width: 410px; }
+  .main .pag04 .tracejado04 {
+    margin-left: 390px; }
+  .main .pag04 .texto03 {
+    width: 420px; }
+  .main .pag05 .tracejado01 {
+    margin-left: 260px; }
+  .main .pag05 .independencia a {
+    margin-top: 125px; }
+  .main .pag05 .tracejado06 {
+    margin-top: 315px; }
+  .main .pag05 .tracejado07 {
+    margin-top: 380px; }
+  .main .pag06 .texto01 {
+    width: 420px; }
+  .main .pag06 .tracejado01 {
+    margin-left: 215px; }
+  .main .pag06 .tracejado02 {
+    margin-left: 115px; }
+  .main .pag06 .tracejado03 {
+    margin-top: 535px; }
+  .main .pag06 .demarcacao-terras {
+    margin-top: 550px;
+    left: -450px; }
+  .main .pag06 .texto02 {
+    margin-top: -370px; }
+  .main .pag07 .texto01 {
+    width: 410px; }
+  .main .pag07 .tracejado01 {
+    margin-left: 285px; }
+  .main .pag07 .marcha {
+    width: 430px; }
+  .main .pag08 .texto01 {
+    width: 410px; }
+  .main .pag08 .tracejado01 {
+    margin-left: 280px; }
+  .main .pag08 .tracejado03 {
+    margin-left: 200px; }
+  .main .pag08 .texto03 {
+    width: 415px; }
+  .main .pag08 .texto03 p:nth-child(2) {
+    width: 850px; }
+  .main .pag08 .tracejado05 {
+    margin-top: -105px; }
+  .main .pag08 .jornal {
+    margin-top: -50px; }
+  .main .pag08 .tracejado06 {
+    margin-top: 1310;
+    margin-left: 255px; }
+  .main .pag09 .mapa {
+    margin-top: 10px; }
+  .main .pag09 .texto03 {
+    width: 410px; }
+  .main .pag09 .tracejado02 {
+    margin-left: 270px; }
+  .main .pag10 .texto02 {
+    width: 415px; } }
 /* Desktops and laptops ----------- */
 .pag02 .text01 {
   width: 467px;

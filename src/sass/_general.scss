@@ -333,11 +333,88 @@ p { margin: 0; }
 // Break Points
 // ====================
 
+// @media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation:portrait) {
+//   .main {
+//     background-color: red;
+//   }
+// }
+
+// @media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation:portrait) {
+//   .main {
+//     background-color: blue;
+//   }
+// }
+
 /* iPad - em pé ----------- */
-// @media only screen and (min-width : 768px)
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  .main {
+    background-color: red;
+  }
+}
 
 /* iPad - deitado ----------- */
-// @media only screen and (min-width: 1024px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  .main {
+
+    // pag02
+    .pag02 .text01 { width: 425px; }
+    .pag02 .tracejado4 { bottom: 180px; }
+
+    // pag03
+    .pag03 .texto01 { width: 430px; }
+    .pag03 .tracejado02 { margin-left: 370px; }
+    .pag03 .texto04 { width: 420px; }
+    .pag03 .tracejado03 { margin-left: 135px; margin-top: 1300px; }
+
+    // pag04
+    .pag04 .texto01 { width: 400px; }
+    .pag04 .expulsao-jesuitas { width: 315px; }
+    .pag04 .tracejado02 { margin-left: 625px; }
+    .pag04 .tracejado03 { margin-left: 280px; }
+    .pag04 .d-jose { margin-right: 30px; }
+    .pag04 .texto02 { width: 410px; }
+    .pag04 .tracejado04 { margin-left: 390px; }
+    .pag04 .texto03 { width: 420px; }
+
+    // pag05
+    .pag05 .tracejado01 { margin-left: 260px; }
+    .pag05 .independencia a { margin-top: 125px; }
+    .pag05 .tracejado06 { margin-top: 315px; }
+    .pag05 .tracejado07 { margin-top: 380px; }
+
+    // pag06
+    .pag06 .texto01 { width: 420px; }
+    .pag06 .tracejado01 { margin-left: 215px; }
+    .pag06 .tracejado02 { margin-left: 115px; }
+    .pag06 .tracejado03 { margin-top: 535px; }
+    .pag06 .demarcacao-terras { margin-top: 550px; left: -450px; }
+    .pag06 .texto02 { margin-top: -370px; }
+
+    // pag07
+    .pag07 .texto01 { width: 410px; }
+    .pag07 .tracejado01 { margin-left: 285px; }
+    .pag07 .marcha { width: 430px; }
+
+    // pag08
+    .pag08 .texto01 { width: 410px; }
+    .pag08 .tracejado01 { margin-left: 280px; }
+    .pag08 .tracejado03 { margin-left: 200px; }
+    .pag08 .texto03 { width: 415px; }
+    .pag08 .texto03 p:nth-child(2) { width: 850px; }
+    .pag08 .tracejado05 { margin-top: -105px; }
+    .pag08 .jornal { margin-top: -50px; }
+    .pag08 .tracejado06 { margin-top: 1310; margin-left: 255px;}
+
+    // pag09
+    .pag09 .mapa { margin-top: 10px; }
+    .pag09 .texto03 { width: 410px; }
+    .pag09 .tracejado02 { margin-left: 270px; }
+
+    // pag10
+    .pag10 .texto02 { width: 415px; }
+  }
+
+}
 
 /* Desktops and laptops ----------- */
 // @media only screen and (min-width : 1224px) {
