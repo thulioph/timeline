@@ -1549,4 +1549,156 @@ p {
   float: left;
   margin-left: 80px; }
 
+.pag08 .title-primary {
+  font-size: 2.5em; }
+.pag08 .texto01 {
+  width: 423px;
+  float: left;
+  margin-left: 54px;
+  margin-top: 13px; }
+  .pag08 .texto01 p:nth-child(2) {
+    margin-top: 24px;
+    font-size: 1.3em;
+    width: 290px;
+    margin-left: 20px; }
+.pag08 .tracejado01 {
+  width: 344px;
+  height: 30px;
+  position: absolute;
+  margin-top: 34px;
+  margin-left: 303px;
+  background: url("../../src/images/pag08/tracejado-01.png") no-repeat; }
+.pag08 .tracejado02 {
+  position: absolute;
+  width: 171px;
+  height: 211px;
+  margin-top: 96px;
+  margin-left: 35px;
+  background: url("../../src/images/pag08/tracejado-02.png") no-repeat; }
+.pag08 .tracejado03 {
+  width: 203px;
+  height: 272px;
+  position: absolute;
+  margin-left: 213px;
+  margin-top: 201px;
+  background: url("../../src/images/pag08/tracejado-03.png") no-repeat; }
+.pag08 .texto02 {
+  width: 471px;
+  float: right;
+  margin-top: 60px;
+  margin-right: 10px;
+  background-color: #bfdad7; }
+  .pag08 .texto02 p {
+    float: left;
+    width: 220px;
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-left: 20px; }
+  .pag08 .texto02 a {
+    float: right;
+    margin-top: -11px;
+    margin-right: -3px; }
+.pag08 .funai {
+  width: 500px;
+  height: 170px;
+  float: left;
+  margin-top: 107px;
+  margin-left: 10px;
+  background-color: #9ab383; }
+  .pag08 .funai a {
+    float: left;
+    margin-top: -95px;
+    margin-left: 16px; }
+  .pag08 .funai p {
+    float: right;
+    font-size: 1.3em;
+    width: 216px;
+    margin-top: 20px; }
+.pag08 .mapa {
+  width: 425px;
+  float: right;
+  margin-right: 50px;
+  margin-top: -71px;
+  position: relative;
+  z-index: 4; }
+.pag08 .tracejado07 {
+  position: absolute;
+  width: 2px;
+  height: 111px;
+  right: 380px;
+  margin-top: 288px;
+  background: url("../../src/images/pag08/tracejado-07.png") no-repeat; }
+.pag08 .tracejado04 {
+  position: absolute;
+  width: 590px;
+  height: 54px;
+  margin-top: 900px;
+  margin-left: 53px;
+  background: url("../../src/images/pag08/tracejado-04.png") no-repeat; }
+.pag08 .texto03 {
+  width: 455px;
+  float: left;
+  margin-left: 54px;
+  margin-top: 131px; }
+  .pag08 .texto03 p:nth-child(2) {
+    width: 930px; }
+  .pag08 .texto03 p:nth-child(3) {
+    width: 700px; }
+.pag08 .xingu {
+  width: 460px;
+  float: right;
+  margin-top: 82px;
+  margin-right: 10px;
+  position: relative;
+  z-index: 4; }
+  .pag08 .xingu a {
+    margin-top: 40px;
+    margin-left: 83px; }
+  .pag08 .xingu .group {
+    height: 350px;
+    padding: 10px;
+    background-color: #bfdad7; }
+    .pag08 .xingu .group a {
+      margin-left: 6px;
+      margin-top: 0; }
+    .pag08 .xingu .group p {
+      font-size: 1.3em;
+      margin-top: 7px;
+      margin-left: 40px;
+      width: 380px; }
+.pag08 .tracejado05 {
+  position: absolute;
+  width: 149px;
+  height: 129px;
+  margin-top: -127px;
+  margin-left: 40px;
+  background: url("../../src/images/pag08/tracejado-05.png") no-repeat; }
+.pag08 .tracejado06 {
+  position: absolute;
+  width: 501px;
+  height: 2px;
+  margin-top: 1289px;
+  margin-left: 257px;
+  background: url("../../src/images/pag08/tracejado-06.png") no-repeat; }
+.pag08 .conselho {
+  width: 710px;
+  float: left;
+  margin-top: 10px;
+  height: 184px;
+  margin-left: 12px;
+  background-color: #9ab383; }
+  .pag08 .conselho a {
+    float: left; }
+  .pag08 .conselho p {
+    float: right;
+    width: 400px;
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-right: 12px; }
+.pag08 .jornal {
+  width: 200px;
+  float: right;
+  margin-right: 64px;
+  margin-top: -85px; }
+
 /*# sourceMappingURL=main.css.map */
