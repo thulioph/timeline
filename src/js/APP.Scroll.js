@@ -5,6 +5,10 @@ APP.Scroll = {
   },
 
   startScroll: function() {
-    console.log('APP.Scroll');
+    window.sr = new scrollReveal({
+      reset: true,
+      move: '50px',
+      mobile: true
+    });
   }
 }
