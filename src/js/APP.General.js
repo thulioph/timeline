@@ -11,9 +11,8 @@ APP.General = {
       event.preventDefault();
 
       href = $(this).attr('href');
-      url = location.href;
-      console.log(url+href);
 
+      // request
       APP.General.request(href);
     });
   },
