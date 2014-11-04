@@ -5,6 +5,10 @@
 body {
   font-size: 10px;
   background-color: $yellow;
+
+  &.bg-modal {
+    background-color: rgba(0, 0, 0, .8);
+  }
 }
 
 ul { padding: 0; }
@@ -40,6 +44,10 @@ p { margin: 0; }
 
   &.js-open {
     bottom: 0;
+  }
+
+  &.js-modal {
+    bottom: -200px;
   }
 }
 
@@ -324,8 +332,50 @@ p { margin: 0; }
 
   a {
     display: inline-block;
+    text-decoration: none;
+    color: $black;
   }
 }
+
+
+
+// ====================
+// Modal
+// ====================
+
+.modal {
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 20000;
+  background: rgba(0,0,0, .8);
+
+  div {
+    max-width: 550px;
+    margin: 100px auto;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    border-radius: 4px;
+  }
+
+  .close-modal {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    text-indent: -9999px;
+    width: 27px;
+    height: 27px;
+    background: url('../../src/images/lightbox/close.png') no-repeat;
+  }
+}
+
 
 
 // ====================

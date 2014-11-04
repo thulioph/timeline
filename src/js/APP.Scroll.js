@@ -7,10 +7,7 @@ APP.Scroll = {
 
   startScroll: function() {
     var config = {
-      mobile: false,
-      reset: true,
-      move: '50px',
-      mobile: true
+      mobile: false
     }
 
     window.sr = new scrollReveal(config);
