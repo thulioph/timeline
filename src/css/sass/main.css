@@ -817,6 +817,8 @@ p {
     text-align: center;
     position: relative;
     border-radius: 4px; }
+    .modal div a {
+      text-decoration: underline; }
   .modal .close-modal {
     position: absolute;
     bottom: -30px;
@@ -918,7 +920,9 @@ p {
   width: 467px;
   float: left;
   margin-top: 22px;
-  margin-left: 68px; }
+  margin-left: 68px;
+  position: relative;
+  z-index: 4; }
 .pag02 .tracejado01 {
   width: 499px;
   height: 55px;
@@ -1681,7 +1685,9 @@ p {
   width: 423px;
   float: left;
   margin-left: 54px;
-  margin-top: 13px; }
+  margin-top: 13px;
+  position: relative;
+  z-index: 4; }
   .pag08 .texto01 p:nth-child(2) {
     margin-top: 24px;
     font-size: 1.3em;

@@ -8,10 +8,9 @@ APP.Modal = {
   openModal: function(href) {
     var href, element;
 
-    href = href.replace('http://192.168.1.64:8888/Freelas/em-andamento/midiaseducativas/timeline/', '');
+    href = href.replace('http://localhost:8888/Freelas/em-andamento/midiaseducativas/timeline/', '');
     element = document.querySelector(href);
-    element.style.visibility = (element.style.visibility == 'visible') ? 'hidden' : 'visible';
-
+    element.style.visibility = 'visible';
     APP.Modal.setStyleBody();
   },
 
