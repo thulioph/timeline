@@ -121,6 +121,7 @@ module.exports = function(grunt) {
   // grunt.registerTask( 'default', [ 'watch' ] );
   grunt.registerTask( 'default', [ 'browserSync', 'watch' ] );
   grunt.registerTask( 'img', [ 'clean', 'imagemin' ] );
+  grunt.registerTask( 'dist', [ 'uglify:dist', 'concat:css' ] );
 
   // grunt.registerTask( 'src', [ 'compass:dist', 'concat:js', 'concat:css' ] );
   // grunt.registerTask( 'dist', [ 'compass:dist', 'uglify:dist', 'concat:css', 'imagemin' ] );
