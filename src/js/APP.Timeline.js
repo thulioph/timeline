@@ -16,6 +16,7 @@ APP.Timeline = {
     $('#header-primary').addClass('js-open');
     APP.Timeline.showLegend();
     APP.Timeline.addPaddingContent();
+    APP.Timeline.hideBody();
   },
 
   stateTwo: function() {
@@ -24,6 +25,7 @@ APP.Timeline = {
     $('#header-primary').addClass('js-closed');
     APP.Timeline.hideLegend();
     APP.Timeline.removePaddingContent();
+    APP.Timeline.showBody();
   },
 
   hideLegend: function() {
@@ -34,6 +36,18 @@ APP.Timeline = {
   showLegend: function() {
     $('.text-complementary').removeClass('js-hide');
     $('.text-complementary').addClass('js-show');
+  },
+
+  hideBody: function() {
+    var mask;
+    mask = document.querySelector('#mask-modal');
+    mask.classList.add('js-visible-modal');
+  },
+
+  showBody: function() {
+    var mask;
+    mask = document.querySelector('#mask-modal');
+    mask.classList.remove('js-visible-modal');
   },
 
   addPaddingContent: function() {
