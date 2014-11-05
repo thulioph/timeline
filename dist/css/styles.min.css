@@ -719,7 +719,10 @@ p {
   position: relative;
   margin: 0 auto;
   display: table;
-  background-color: #f3ead2; }
+  background-color: #f3ead2;
+  background: #f3ead2 url("../../src/images/bordas-laterais.png");
+  background-repeat: no-repeat;
+  background-position: top center; }
   .content.js-padding {
     padding-bottom: 190px; }
   .content figure {
@@ -830,8 +833,9 @@ p {
 
 /* iPad - em pé ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .main {
-    background-color: red; } }
+  .main .content {
+    background: red;
+    max-width: 768px; } }
 /* iPad - deitado ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .main .pag02 .text01 {
@@ -915,7 +919,41 @@ p {
     margin-left: 270px; }
   .main .pag10 .texto02 {
     width: 415px; } }
-/* Desktops and laptops ----------- */
+.pag01 .texto01 {
+  width: 440px;
+  float: left;
+  margin-left: 53px;
+  margin-top: -15px; }
+.pag01 .mapa {
+  width: 380px;
+  float: right;
+  margin-right: 10px; }
+  .pag01 .mapa a {
+    float: left;
+    margin-top: -20px;
+    position: relative; }
+  .pag01 .mapa p:nth-child(1) {
+    width: 302px;
+    font-size: 1.3em;
+    float: left;
+    margin-top: 4px;
+    margin-left: 32px; }
+  .pag01 .mapa p.text {
+    float: right;
+    background-color: #bfdad7;
+    width: 160px;
+    margin-top: -190px;
+    font-size: 1.3em;
+    text-align: right;
+    padding: 20px 5px 20px 60px; }
+.pag01 .cranio-luzia-01 {
+  width: 337px;
+  margin-left: 10px;
+  float: left; }
+  .pag01 .cranio-luzia-01 a {
+    float: left;
+    margin-left: -53px; }
+
 .pag02 .text01 {
   width: 467px;
   float: left;

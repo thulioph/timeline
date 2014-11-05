@@ -2,5 +2,58 @@
 // Pages Internal
 // ====================
 
-$color1: rgb(191, 218, 215);
-$color2: rgb(153, 178, 131);
+.pag01 {
+
+  .texto01 {
+    width: 440px;
+    float: left;
+    margin-left: 53px;
+    margin-top: -15px;
+  }
+
+  .mapa {
+    width: 380px;
+    float: right;
+    margin-right: 10px;
+
+    a {
+      float: left;
+      margin-top: -20px;
+      position: relative;
+    }
+
+    p {
+      &:nth-child(1) {
+        width: 302px;
+        font-size: 1.3em;
+        float: left;
+        margin-top: 4px;
+        margin-left: 32px;
+      }
+
+      &.text {
+        float: right;
+        background-color: $azul;
+        width: 160px;
+        margin-top: -190px;
+        font-size: 1.3em;
+        text-align: right;
+        padding: 20px 5px 20px 60px;
+      }
+    }
+  }
+
+  .cranio-luzia-01 {
+    width: 337px;
+    margin-left: 10px;
+    float: left;
+
+    a {
+      float: left;
+      margin-left: -53px;
+    }
+
+    p {}
+  }
+
+}

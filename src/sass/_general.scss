@@ -233,11 +233,9 @@ p { margin: 0; }
   display: table;
 
   background-color: $yellow;
-  // background-attachment: fixed;
-  // background: $yellow url("../../src/images/bordas-laterais.png");
-  // background-repeat: no-repeat;
-  // background-position: top center;
-  // background-size: cover;
+  background: $yellow url("../../src/images/bordas-laterais.png");
+  background-repeat: no-repeat;
+  background-position: top center;
 
   &.js-padding {
     padding-bottom: 190px;
@@ -386,22 +384,15 @@ p { margin: 0; }
 // Break Points
 // ====================
 
-// @media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation:portrait) {
-//   .main {
-//     background-color: red;
-//   }
-// }
-
-// @media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation:portrait) {
-//   .main {
-//     background-color: blue;
-//   }
-// }
-
 /* iPad - em pé ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   .main {
-    background-color: red;
+    .content {
+      background: red;
+      max-width: 768px;
+    }
+
+    // .
   }
 }
 
@@ -468,6 +459,3 @@ p { margin: 0; }
   }
 
 }
-
-/* Desktops and laptops ----------- */
-// @media only screen and (min-width : 1224px) {
