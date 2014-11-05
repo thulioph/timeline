@@ -22,7 +22,7 @@ APP.Modal = {
     document.body.style.height = '100%';
     document.body.style.margin = '0';
     document.body.style.padding = '0';
-    document.body.classList.add('bg-modal');
+    document.body.classList.add('js-bg-modal');
 
     var header = document.getElementById('header-primary');
     header.classList.add('js-modal');
@@ -33,7 +33,7 @@ APP.Modal = {
     element.classList.remove('open');
 
     document.body.style.overflow = 'visible';
-    document.body.classList.remove('bg-modal');
+    document.body.classList.remove('js-bg-modal');
 
     var header = document.getElementById('header-primary');
     header.classList.remove('js-modal');
