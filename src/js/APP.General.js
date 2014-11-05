@@ -12,7 +12,6 @@ APP.General = {
 
       href = $(this).attr('href');
 
-      // request
       APP.General.request(href);
     });
   },
