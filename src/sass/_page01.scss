@@ -167,6 +167,8 @@
     float: left;
     margin-left: 53px;
     margin-top: -245px;
+    position: relative;
+    z-index: 5;
 
     .text {
       width: 620px;
