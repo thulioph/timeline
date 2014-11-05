@@ -924,9 +924,17 @@ p {
   float: left;
   margin-left: 53px;
   margin-top: -15px; }
+.pag01 .tracejado01 {
+  width: 499px;
+  height: 55px;
+  position: absolute;
+  margin-top: -6px;
+  margin-left: 290px;
+  background: url("../../src/images/pag01/tracejado-01.png") no-repeat; }
 .pag01 .mapa {
   width: 380px;
   float: right;
+  margin-top: 14px;
   margin-right: 10px; }
   .pag01 .mapa a {
     float: left;
@@ -946,13 +954,205 @@ p {
     font-size: 1.3em;
     text-align: right;
     padding: 20px 5px 20px 60px; }
+.pag01 .tracejado07 {
+  position: absolute;
+  width: 127px;
+  height: 254px;
+  right: 130px;
+  margin-top: 356px;
+  background: url("../../src/images/pag01/tracejado-07.png") no-repeat; }
+.pag01 .tracejado02 {
+  position: absolute;
+  width: 217px;
+  height: 137px;
+  margin-top: 173px;
+  margin-left: 307px;
+  background: url("../../src/images/pag01/tracejado-02.png") no-repeat; }
 .pag01 .cranio-luzia-01 {
   width: 337px;
   margin-left: 10px;
-  float: left; }
+  float: left;
+  height: 140px;
+  margin-top: 52px;
+  background-color: #9ab383; }
   .pag01 .cranio-luzia-01 a {
     float: left;
-    margin-left: -53px; }
+    width: 248px;
+    margin-left: -53px;
+    margin-top: -34px; }
+  .pag01 .cranio-luzia-01 p {
+    float: right;
+    width: 140px;
+    font-size: 1.3em;
+    text-align: right;
+    margin-top: 20px; }
+.pag01 .reconstrucao-luzia-01 {
+  width: 320px;
+  float: left;
+  margin-top: -23px;
+  margin-left: -47px;
+  position: relative;
+  z-index: 4; }
+.pag01 .tracejado08 {
+  position: absolute;
+  width: 648px;
+  height: 2px;
+  margin-top: 830px;
+  right: 10px;
+  background: url("../../src/images/pag01/tracejado-08.png") no-repeat; }
+.pag01 .capivara {
+  width: 240px;
+  margin-right: 10px;
+  float: right;
+  margin-top: -32px;
+  position: relative;
+  z-index: 4; }
+  .pag01 .capivara a:nth-child(1) {
+    margin-left: 21px; }
+  .pag01 .capivara a:nth-child(2) {
+    margin-left: -82px;
+    margin-top: 22px;
+    float: left; }
+  .pag01 .capivara p {
+    font-size: 1.3em; }
+    .pag01 .capivara p.text {
+      width: 160px;
+      font-size: 1.3em;
+      float: right;
+      margin-top: 22px;
+      margin-right: 10px; }
+    .pag01 .capivara p.text2 {
+      font-size: 1.3em;
+      width: 280px;
+      margin-left: -40px;
+      float: left; }
+.pag01 .tracejado03 {
+  position: absolute;
+  width: 108px;
+  height: 601px;
+  margin-top: 633px;
+  margin-left: 31px;
+  background: url("../../src/images/pag01/tracejado-03.png") no-repeat; }
+.pag01 .texto02 {
+  width: 299px;
+  float: left;
+  margin-left: 53px;
+  margin-top: -245px; }
+  .pag01 .texto02 .text {
+    width: 620px;
+    float: left; }
+.pag01 .tracejado04 {
+  position: absolute;
+  width: 438px;
+  height: 55px;
+  margin-top: 948px;
+  margin-left: 253px;
+  background: url("../../src/images/pag01/tracejado-04.png") no-repeat; }
+.pag01 .sambaquis {
+  width: 180px;
+  float: left;
+  margin-top: 64px;
+  margin-left: 13px;
+  position: relative;
+  z-index: 4; }
+.pag01 .ceramica-marajoara {
+  width: 368px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 46px;
+  position: relative;
+  z-index: 4; }
+  .pag01 .ceramica-marajoara a:nth-child(1) {
+    margin-left: 12px; }
+  .pag01 .ceramica-marajoara a:nth-child(2) {
+    margin-left: -13px; }
+.pag01 .capa-veja {
+  float: left;
+  margin-top: 12px;
+  margin-left: 50px; }
+.pag01 .tracejado09 {
+  position: absolute;
+  width: 140px;
+  height: 156px;
+  margin-top: 200px;
+  left: 310px;
+  background: url("../../src/images/pag01/tracejado-09.png") no-repeat; }
+.pag01 .tracejado05 {
+  position: absolute;
+  width: 294px;
+  height: 66px;
+  margin-top: 55px;
+  left: 436px;
+  background: url("../../src/images/pag01/tracejado-05.png") no-repeat; }
+.pag01 .cranio-luzia-02 {
+  width: 423px;
+  float: left;
+  margin-left: 71px;
+  margin-top: 5px; }
+  .pag01 .cranio-luzia-02 a {
+    float: left; }
+  .pag01 .cranio-luzia-02 p {
+    float: right;
+    font-size: 1.3em;
+    width: 240px;
+    margin-top: 9px;
+    position: relative;
+    z-index: 4; }
+.pag01 .annette {
+  width: 147px;
+  float: left;
+  margin-top: -59px;
+  margin-left: 36px;
+  position: relative;
+  z-index: 4; }
+.pag01 .tracejado06 {
+  position: absolute;
+  width: 184px;
+  height: 19px;
+  margin-top: 423px;
+  left: 137px;
+  background: url("../../src/images/pag01/tracejado-06.png") no-repeat; }
+.pag01 .walter {
+  width: 410px;
+  float: left;
+  margin-top: 60px;
+  margin-left: 10px;
+  position: relative; }
+  .pag01 .walter .image {
+    float: left;
+    margin-left: 26px;
+    margin-top: 5px; }
+  .pag01 .walter p {
+    font-size: 1.3em;
+    float: left;
+    width: 234px;
+    text-align: right;
+    margin-top: 134px; }
+  .pag01 .walter .image2 {
+    position: absolute;
+    top: -28px;
+    right: -10px; }
+.pag01 .reconstrucao-luzia-03 {
+  width: 290px;
+  float: left;
+  margin-top: 5px;
+  margin-left: -9px; }
+.pag01 .niede {
+  width: 260px;
+  float: right;
+  margin-right: 10px; }
+  .pag01 .niede a {
+    margin-top: -56px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 62px; }
+  .pag01 .niede p {
+    font-size: 1.3em;
+    text-align: right;
+    width: 273px;
+    margin-left: -30px;
+    float: left;
+    margin-top: 18px; }
 
 .pag02 .text01 {
   width: 467px;
