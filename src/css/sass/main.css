@@ -803,7 +803,7 @@ p {
 
 .modal {
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   left: 0px;
   top: 0px;
   width: 100%;
@@ -1037,7 +1037,9 @@ p {
   width: 299px;
   float: left;
   margin-left: 53px;
-  margin-top: -245px; }
+  margin-top: -245px;
+  position: relative;
+  z-index: 5; }
   .pag01 .texto02 .text {
     width: 620px;
     float: left; }
