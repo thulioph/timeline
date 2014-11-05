@@ -11,6 +11,8 @@ APP.Modal = {
     href = href.replace('http://localhost:8888/Freelas/em-andamento/midiaseducativas/timeline/', '');
     element = document.querySelector(href);
     element.style.visibility = 'visible';
+    element.classList.add('open');
+
     APP.Modal.setStyleBody();
   },
 
@@ -28,6 +30,7 @@ APP.Modal = {
 
   closeModal: function(element) {
     element.style.visibility = 'hidden';
+    element.classList.remove('open');
 
     document.body.style.overflow = 'visible';
     document.body.classList.remove('bg-modal');
@@ -40,6 +43,7 @@ APP.Modal = {
     $('.reference').on('click', function(event){
       event.preventDefault();
       APP.Modal.openModal(this.href);
+      APP.Modal.escModal();
     });
   },
 
@@ -49,6 +53,18 @@ APP.Modal = {
       var element = this.parentNode.parentNode; // div pai ou .modal
 
       APP.Modal.closeModal(element);
+    });
+  },
+
+  escModal: function() {
+    var element;
+    element = document.querySelector('.open');
+
+    $(document).keyup(function(event) {
+      if(event.keyCode == 27) {
+        APP.Modal.closeModal(element);
+      }
+
     });
   }
 }
