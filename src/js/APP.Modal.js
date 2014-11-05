@@ -8,7 +8,7 @@ APP.Modal = {
   openModal: function(href) {
     var href, element;
 
-    href = href.replace('http://localhost:8888/Freelas/em-andamento/midiaseducativas/timeline/', '');
+    href = href.replace(location.href, '');
     element = document.querySelector(href);
     element.style.visibility = 'visible';
     element.classList.add('open');
