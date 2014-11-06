@@ -5,7 +5,7 @@ APP.General = {
   },
 
   getClick: function() {
-    var href, url;
+    var href;
 
     $('.nav-list').on('click', 'a', function(event) {
       event.preventDefault();

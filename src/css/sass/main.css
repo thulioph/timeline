@@ -518,18 +518,203 @@ th {
 [dir="rtl"] .slick-slide {
   float: right; }
 
+/* Preload images */
+body:after {
+  content: url(../images/lightbox/close.png) url(../images/lightbox/loading.gif) url(../images/lightbox/prev.png) url(../images/lightbox/next.png);
+  display: none; }
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none; }
+
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal; }
+
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+.lightbox a img {
+  border: none; }
+
+.lb-outerContainer {
+  position: relative;
+  background-color: white;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px; }
+
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.lb-container {
+  padding: 4px; }
+
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0; }
+
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(../images/lightbox/loading.gif) no-repeat; }
+
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10; }
+
+.lb-container > .nav {
+  left: 0; }
+
+.lb-nav a {
+  outline: none;
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="); }
+
+.lb-prev, .lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block; }
+
+.lb-nav a.lb-prev {
+  width: 34%;
+  left: 0;
+  float: left;
+  background: url(../images/lightbox/prev.png) left 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s; }
+
+.lb-nav a.lb-prev:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1; }
+
+.lb-nav a.lb-next {
+  width: 64%;
+  right: 0;
+  float: right;
+  background: url(../images/lightbox/next.png) right 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s; }
+
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1; }
+
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px; }
+
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.lb-data {
+  padding: 0 4px;
+  color: #ccc; }
+
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em; }
+
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em; }
+
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999; }
+
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(../images/lightbox/close.png) top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s; }
+
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1; }
+
 @font-face {
   font-family: 'ComicBookRegular';
-  src: url("../../src/fonts/comic_book.eot");
-  src: url("../../src/fonts/comic_book.eot") format("embedded-opentype"), url("../../src/fonts/comic_book.woff") format("woff"), url("../../src/fonts/comic_book.ttf") format("truetype"), url("../../src/fonts/comic_book.svg#ComicBookRegular") format("svg"); }
+  src: url("../../dist/fonts/comic_book.eot");
+  src: url("../../dist/fonts/comic_book.eot") format("embedded-opentype"), url("../../dist/fonts/comic_book.woff") format("woff"), url("../../dist/fonts/comic_book.ttf") format("truetype"), url("../../dist/fonts/comic_book.svg#ComicBookRegular") format("svg"); }
 @font-face {
   font-family: 'LithosPro850';
-  src: url("../../src/fonts/lithospro-black.eot");
-  src: url("../../src/fonts/lithospro-black.eot") format("embedded-opentype"), url("../../src/fonts/lithospro-black.woff") format("woff"), url("../../src/fonts/lithospro-black.ttf") format("truetype"), url("../../src/fonts/lithospro-black.svg#LithosPro850") format("svg"); }
+  src: url("../../dist/fonts/lithospro-black.eot");
+  src: url("../../dist/fonts/lithospro-black.eot") format("embedded-opentype"), url("../../dist/fonts/lithospro-black.woff") format("woff"), url("../../dist/fonts/lithospro-black.ttf") format("truetype"), url("../../dist/fonts/lithospro-black.svg#LithosPro850") format("svg"); }
 @font-face {
   font-family: 'LithosProRegular';
-  src: url("../../src/fonts/lithospro-regular.eot");
-  src: url("../../src/fonts/lithospro-regular.eot") format("embedded-opentype"), url("../../src/fonts/lithospro-regular.woff") format("woff"), url("../../src/fonts/lithospro-regular.ttf") format("truetype"), url("../../src/fonts/lithospro-regular.svg#LithosProRegular") format("svg"); }
+  src: url("../../dist/fonts/lithospro-regular.eot");
+  src: url("../../dist/fonts/lithospro-regular.eot") format("embedded-opentype"), url("../../dist/fonts/lithospro-regular.woff") format("woff"), url("../../dist/fonts/lithospro-regular.ttf") format("truetype"), url("../../dist/fonts/lithospro-regular.svg#LithosProRegular") format("svg"); }
 .nav-item::before {
   font-family: "ComicBookRegular";
   font-size: 1.2em;
@@ -626,7 +811,7 @@ p {
     position: absolute;
     height: 15px;
     top: -15px;
-    background: url("../../src/images/base-timeline.png");
+    background: url("../images/base-timeline.png");
     background-repeat: no-repeat;
     background-position: 0 7px; }
 
@@ -731,7 +916,7 @@ p {
   margin: 0 auto;
   display: table;
   background-color: #f3ead2;
-  background: #f3ead2 url("../../src/images/bordas-laterais.png");
+  background: #f3ead2 url("../images/bordas-laterais.png");
   background-repeat: no-repeat;
   background-position: top center;
   -webkit-transition: background, 0.2s, linear, 0s;
@@ -774,7 +959,7 @@ p {
     z-index: 100;
     margin-top: 24px;
     margin-left: 7px;
-    background-image: url("../../src/images/icon-home.png");
+    background-image: url("../images/icon-home.png");
     background-size: 21px 19px;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -863,7 +1048,7 @@ p {
     text-indent: -9999px;
     width: 27px;
     height: 27px;
-    background: url("../../src/images/lightbox/close.png") no-repeat; }
+    background: url("../images/lightbox/close.png") no-repeat; }
 
 /* iPad - em pé ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
@@ -963,7 +1148,7 @@ p {
   position: absolute;
   margin-top: -6px;
   margin-left: 290px;
-  background: url("../../src/images/pag01/tracejado-01.png") no-repeat; }
+  background: url("../../dist/images/pag01/tracejado-01.png") no-repeat; }
 .pag01 .mapa {
   width: 380px;
   float: right;
@@ -993,14 +1178,14 @@ p {
   height: 254px;
   right: 130px;
   margin-top: 356px;
-  background: url("../../src/images/pag01/tracejado-07.png") no-repeat; }
+  background: url("../../dist/images/pag01/tracejado-07.png") no-repeat; }
 .pag01 .tracejado02 {
   position: absolute;
   width: 217px;
   height: 137px;
   margin-top: 173px;
   margin-left: 307px;
-  background: url("../../src/images/pag01/tracejado-02.png") no-repeat; }
+  background: url("../../dist/images/pag01/tracejado-02.png") no-repeat; }
 .pag01 .cranio-luzia-01 {
   width: 337px;
   margin-left: 10px;
@@ -1032,7 +1217,7 @@ p {
   height: 2px;
   margin-top: 830px;
   right: 10px;
-  background: url("../../src/images/pag01/tracejado-08.png") no-repeat; }
+  background: url("../../dist/images/pag01/tracejado-08.png") no-repeat; }
 .pag01 .capivara {
   width: 240px;
   margin-right: 10px;
@@ -1065,7 +1250,7 @@ p {
   height: 601px;
   margin-top: 633px;
   margin-left: 31px;
-  background: url("../../src/images/pag01/tracejado-03.png") no-repeat; }
+  background: url("../../dist/images/pag01/tracejado-03.png") no-repeat; }
 .pag01 .texto02 {
   width: 299px;
   float: left;
@@ -1082,7 +1267,7 @@ p {
   height: 55px;
   margin-top: 948px;
   margin-left: 253px;
-  background: url("../../src/images/pag01/tracejado-04.png") no-repeat; }
+  background: url("../../dist/images/pag01/tracejado-04.png") no-repeat; }
 .pag01 .sambaquis {
   width: 180px;
   float: left;
@@ -1111,14 +1296,14 @@ p {
   height: 156px;
   margin-top: 200px;
   left: 310px;
-  background: url("../../src/images/pag01/tracejado-09.png") no-repeat; }
+  background: url("../../dist/images/pag01/tracejado-09.png") no-repeat; }
 .pag01 .tracejado05 {
   position: absolute;
   width: 294px;
   height: 66px;
   margin-top: 55px;
   left: 436px;
-  background: url("../../src/images/pag01/tracejado-05.png") no-repeat; }
+  background: url("../../dist/images/pag01/tracejado-05.png") no-repeat; }
 .pag01 .cranio-luzia-02 {
   width: 423px;
   float: left;
@@ -1146,7 +1331,7 @@ p {
   height: 19px;
   margin-top: 423px;
   left: 137px;
-  background: url("../../src/images/pag01/tracejado-06.png") no-repeat; }
+  background: url("../../dist/images/pag01/tracejado-06.png") no-repeat; }
 .pag01 .walter {
   width: 410px;
   float: left;
@@ -1202,14 +1387,14 @@ p {
   margin-top: 84px;
   margin-left: 311px;
   position: absolute;
-  background: url("../../src/images/pag02/tracejado-01.png") no-repeat; }
+  background: url("../../dist/images/pag02/tracejado-01.png") no-repeat; }
 .pag02 .tracejado02 {
   position: absolute;
   width: 457px;
   height: 1292px;
   margin-top: 168px;
   margin-left: 39px;
-  background: url("../../src/images/pag02/tracejado-02.png") no-repeat; }
+  background: url("../../dist/images/pag02/tracejado-02.png") no-repeat; }
 .pag02 .pedro {
   width: 470px;
   float: right;
@@ -1256,7 +1441,7 @@ p {
   margin-top: 345px;
   position: absolute;
   z-index: 2;
-  background: url("../../src/images/pag02/tracejado-03.png") no-repeat; }
+  background: url("../../dist/images/pag02/tracejado-03.png") no-repeat; }
 .pag02 .texto02 {
   width: 465px;
   margin-top: 60px;
@@ -1285,7 +1470,7 @@ p {
   left: 300px;
   z-index: 2;
   position: absolute;
-  background: url("../../src/images/pag02/tracejado-04.png") no-repeat; }
+  background: url("../../dist/images/pag02/tracejado-04.png") no-repeat; }
 .pag02 .mapa {
   width: 450px;
   float: right;
@@ -1305,14 +1490,14 @@ p {
   margin-top: 95px;
   margin-left: 50px;
   position: absolute;
-  background: url("../../src/images/pag03/tracejado-01.png") no-repeat; }
+  background: url("../../dist/images/pag03/tracejado-01.png") no-repeat; }
 .pag03 .tracejado02 {
   width: 122px;
   height: 206px;
   margin-top: 158px;
   margin-left: 402px;
   position: absolute;
-  background: url("../../src/images/pag03/tracejado-02.png") no-repeat; }
+  background: url("../../dist/images/pag03/tracejado-02.png") no-repeat; }
 .pag03 .tome-souza {
   width: 398px;
   float: right;
@@ -1343,7 +1528,7 @@ p {
   height: 105px;
   margin-top: 293px;
   margin-left: 230px;
-  background: url("../../src/images/pag03/tracejado-04.png") no-repeat; }
+  background: url("../../dist/images/pag03/tracejado-04.png") no-repeat; }
 .pag03 .pau-brasil-02 {
   width: 345px;
   float: left;
@@ -1357,7 +1542,7 @@ p {
   height: 259px;
   margin-top: 420px;
   margin-left: 600px;
-  background: url("../../src/images/pag03/tracejado-05.png") no-repeat; }
+  background: url("../../dist/images/pag03/tracejado-05.png") no-repeat; }
 .pag03 .texto02 {
   width: 263px;
   float: right;
@@ -1406,7 +1591,7 @@ p {
   height: 2px;
   margin-top: 1245px;
   margin-left: 50px;
-  background: url("../../src/images/pag03/tracejado-06.png") no-repeat; }
+  background: url("../../dist/images/pag03/tracejado-06.png") no-repeat; }
 .pag03 .jesuitas {
   width: 440px;
   float: right;
@@ -1423,7 +1608,7 @@ p {
   margin-top: 1316px;
   margin-left: 140px;
   position: absolute;
-  background: url("../../src/images/pag03/tracejado-03.png") no-repeat; }
+  background: url("../../dist/images/pag03/tracejado-03.png") no-repeat; }
 .pag03 .marques-pombal {
   width: 471px;
   float: right;
@@ -1465,7 +1650,7 @@ p {
   height: 2px;
   margin-top: 140px;
   margin-left: 250px;
-  background: url("../../src/images/pag04/tracejado-01.png") no-repeat; }
+  background: url("../../dist/images/pag04/tracejado-01.png") no-repeat; }
 .pag04 .cartaz {
   width: 484px;
   float: right;
@@ -1487,7 +1672,7 @@ p {
   position: absolute;
   right: 10px;
   margin-top: 352px;
-  background: url("../../src/images/pag04/tracejado-08.png") no-repeat; }
+  background: url("../../dist/images/pag04/tracejado-08.png") no-repeat; }
 .pag04 .marques-pombal {
   width: 360px;
   margin-left: 30px;
@@ -1501,7 +1686,7 @@ p {
   position: absolute;
   margin-top: 321px;
   margin-left: 290px;
-  background: url("../../src/images/pag04/tracejado-07.png") no-repeat; }
+  background: url("../../dist/images/pag04/tracejado-07.png") no-repeat; }
 .pag04 .expulsao-jesuitas {
   width: 350px;
   float: left;
@@ -1520,14 +1705,14 @@ p {
   height: 2px;
   margin-top: 91px;
   margin-left: 640px;
-  background: url("../../src/images/pag04/tracejado-02.png") no-repeat; }
+  background: url("../../dist/images/pag04/tracejado-02.png") no-repeat; }
 .pag04 .tracejado03 {
   width: 238px;
   height: 2px;
   position: absolute;
   margin-top: 123px;
   margin-left: 296px;
-  background: url("../../src/images/pag04/tracejado-03.png") no-repeat; }
+  background: url("../../dist/images/pag04/tracejado-03.png") no-repeat; }
 .pag04 .d-jose {
   width: 249px;
   float: right;
@@ -1547,7 +1732,7 @@ p {
   position: absolute;
   margin-top: 449px;
   left: 15px;
-  background: url("../../src/images/pag04/tracejado-06.png") no-repeat; }
+  background: url("../../dist/images/pag04/tracejado-06.png") no-repeat; }
 .pag04 .texto02 {
   width: 455px;
   float: left;
@@ -1559,7 +1744,7 @@ p {
   position: absolute;
   margin-top: 794px;
   margin-left: 418px;
-  background: url("../../src/images/pag04/tracejado-04.png") no-repeat; }
+  background: url("../../dist/images/pag04/tracejado-04.png") no-repeat; }
 .pag04 .botocudos {
   width: 470px;
   float: right;
@@ -1585,7 +1770,7 @@ p {
   position: absolute;
   margin-top: 160px;
   margin-left: 50px;
-  background: url("../../src/images/pag04/tracejado-05.png") no-repeat; }
+  background: url("../../dist/images/pag04/tracejado-05.png") no-repeat; }
 .pag04 .danca-tapuias {
   width: 403px;
   float: right;
@@ -1611,7 +1796,7 @@ p {
   height: 41px;
   margin-top: 10px;
   margin-left: 279px;
-  background: url("../../src/images/pag05/tracejado-01.png") no-repeat; }
+  background: url("../../dist/images/pag05/tracejado-01.png") no-repeat; }
 .pag05 .independencia {
   width: 470px;
   float: right;
@@ -1639,14 +1824,14 @@ p {
   height: 2px;
   margin-left: 530px;
   margin-top: 351px;
-  background: url("../../src/images/pag05/tracejado-06.png") no-repeat; }
+  background: url("../../dist/images/pag05/tracejado-06.png") no-repeat; }
 .pag05 .tracejado07 {
   position: absolute;
   width: 145px;
   height: 115px;
   margin-left: 727px;
   margin-top: 398px;
-  background: url("../../src/images/pag05/tracejado-07.png") no-repeat; }
+  background: url("../../dist/images/pag05/tracejado-07.png") no-repeat; }
 .pag05 .proclamacao {
   width: 470px;
   float: right;
@@ -1669,13 +1854,13 @@ p {
   height: 115px;
   right: 228px;
   margin-top: 643px;
-  background: url("../../src/images/pag05/tracejado-08.png") no-repeat; }
+  background: url("../../dist/images/pag05/tracejado-08.png") no-repeat; }
 .pag05 .tracejado03 {
   position: absolute;
   width: 195px;
   height: 96px;
   margin-left: 50px;
-  background: url("../../src/images/pag05/tracejado-03.png") no-repeat; }
+  background: url("../../dist/images/pag05/tracejado-03.png") no-repeat; }
 .pag05 .texto02 {
   width: 326px;
   float: left;
@@ -1689,14 +1874,14 @@ p {
   height: 236px;
   margin-top: 135px;
   margin-left: 306px;
-  background: url("../../src/images/pag05/tracejado-04.png") no-repeat; }
+  background: url("../../dist/images/pag05/tracejado-04.png") no-repeat; }
 .pag05 .tracejado05 {
   position: absolute;
   width: 133px;
   height: 157px;
   right: 110px;
   margin-top: -140px;
-  background: url("../../src/images/pag05/tracejado-05.png") no-repeat; }
+  background: url("../../dist/images/pag05/tracejado-05.png") no-repeat; }
 .pag05 .texto03 {
   background-color: #9ab383;
   width: 383px;
@@ -1717,7 +1902,7 @@ p {
   position: absolute;
   margin-left: 690px;
   margin-top: 253px;
-  background: url("../../src/images/pag05/tracejado-02.png") no-repeat; }
+  background: url("../../dist/images/pag05/tracejado-02.png") no-repeat; }
 .pag05 .texto04 {
   width: 247px;
   float: right;
@@ -1739,14 +1924,14 @@ p {
   height: 30px;
   margin-top: 30px;
   margin-left: 237px;
-  background: url("../../src/images/pag06/tracejado-01.png") no-repeat; }
+  background: url("../../dist/images/pag06/tracejado-01.png") no-repeat; }
 .pag06 .tracejado02 {
   position: absolute;
   width: 463px;
   height: 77px;
   margin-top: 158px;
   margin-left: 155px;
-  background: url("../../src/images/pag06/tracejado-02.png") no-repeat; }
+  background: url("../../dist/images/pag06/tracejado-02.png") no-repeat; }
 .pag06 .auguste-comte {
   width: 495px;
   float: right;
@@ -1775,14 +1960,14 @@ p {
   height: 2px;
   right: 10px;
   margin-top: 379px;
-  background: url("../../src/images/pag06/tracejado-05.png") no-repeat; }
+  background: url("../../dist/images/pag06/tracejado-05.png") no-repeat; }
 .pag06 .tracejado03 {
   width: 396px;
   height: 2px;
   position: absolute;
   margin-top: 555px;
   margin-left: 117px;
-  background: url("../../src/images/pag06/tracejado-03.png") no-repeat; }
+  background: url("../../dist/images/pag06/tracejado-03.png") no-repeat; }
 .pag06 .tribo-bororos {
   width: 475px;
   right: 0;
@@ -1803,7 +1988,7 @@ p {
   height: 2px;
   right: 10px;
   margin-top: 886px;
-  background: url("../../src/images/pag06/tracejado-04.png") no-repeat; }
+  background: url("../../dist/images/pag06/tracejado-04.png") no-repeat; }
 .pag06 .texto02 {
   width: 394px;
   float: right;
@@ -1815,7 +2000,7 @@ p {
   height: 232px;
   bottom: 120px;
   margin-left: 160px;
-  background: url("../../src/images/pag06/tracejado-06.png") no-repeat; }
+  background: url("../../dist/images/pag06/tracejado-06.png") no-repeat; }
 .pag06 .rondon {
   width: 505px;
   float: right;
@@ -1848,14 +2033,14 @@ p {
   height: 30px;
   margin-top: 71px;
   margin-left: 308px;
-  background: url("../../src/images/pag07/tracejado-01.png") no-repeat; }
+  background: url("../../dist/images/pag07/tracejado-01.png") no-repeat; }
 .pag07 .tracejado02 {
   position: absolute;
   width: 170px;
   height: 280px;
   margin-top: 132px;
   margin-left: 29px;
-  background: url("../../src/images/pag07/tracejado-02.png") no-repeat; }
+  background: url("../../dist/images/pag07/tracejado-02.png") no-repeat; }
 .pag07 .getulio {
   width: 483px;
   float: right;
@@ -1886,14 +2071,14 @@ p {
   height: 121px;
   right: 260px;
   margin-top: 770px;
-  background: url("../../src/images/pag07/tracejado-04.png") no-repeat; }
+  background: url("../../dist/images/pag07/tracejado-04.png") no-repeat; }
 .pag07 .tracejado03 {
   width: 237px;
   height: 380px;
   position: absolute;
   margin-top: 675px;
   margin-left: 40px;
-  background: url("../../src/images/pag07/tracejado-03.png") no-repeat; }
+  background: url("../../dist/images/pag07/tracejado-03.png") no-repeat; }
 .pag07 .marcha {
   width: 443px;
   float: left;
@@ -1920,7 +2105,7 @@ p {
   height: 206px;
   margin-top: 350px;
   margin-left: 250px;
-  background: url("../../src/images/pag07/tracejado-05.png") no-repeat; }
+  background: url("../../dist/images/pag07/tracejado-05.png") no-repeat; }
 .pag07 .darcy-ribeiro {
   width: 503px;
   float: left;
@@ -1972,21 +2157,21 @@ p {
   position: absolute;
   margin-top: 34px;
   margin-left: 303px;
-  background: url("../../src/images/pag08/tracejado-01.png") no-repeat; }
+  background: url("../../dist/images/pag08/tracejado-01.png") no-repeat; }
 .pag08 .tracejado02 {
   position: absolute;
   width: 171px;
   height: 211px;
   margin-top: 96px;
   margin-left: 35px;
-  background: url("../../src/images/pag08/tracejado-02.png") no-repeat; }
+  background: url("../../dist/images/pag08/tracejado-02.png") no-repeat; }
 .pag08 .tracejado03 {
   width: 203px;
   height: 272px;
   position: absolute;
   margin-left: 213px;
   margin-top: 201px;
-  background: url("../../src/images/pag08/tracejado-03.png") no-repeat; }
+  background: url("../../dist/images/pag08/tracejado-03.png") no-repeat; }
 .pag08 .texto02 {
   width: 471px;
   float: right;
@@ -2032,14 +2217,14 @@ p {
   height: 111px;
   right: 380px;
   margin-top: 288px;
-  background: url("../../src/images/pag08/tracejado-07.png") no-repeat; }
+  background: url("../../dist/images/pag08/tracejado-07.png") no-repeat; }
 .pag08 .tracejado04 {
   position: absolute;
   width: 590px;
   height: 54px;
   margin-top: 900px;
   margin-left: 53px;
-  background: url("../../src/images/pag08/tracejado-04.png") no-repeat; }
+  background: url("../../dist/images/pag08/tracejado-04.png") no-repeat; }
 .pag08 .texto03 {
   width: 455px;
   float: left;
@@ -2077,14 +2262,14 @@ p {
   height: 129px;
   margin-top: -127px;
   margin-left: 40px;
-  background: url("../../src/images/pag08/tracejado-05.png") no-repeat; }
+  background: url("../../dist/images/pag08/tracejado-05.png") no-repeat; }
 .pag08 .tracejado06 {
   position: absolute;
   width: 501px;
   height: 2px;
   margin-top: 1289px;
   margin-left: 257px;
-  background: url("../../src/images/pag08/tracejado-06.png") no-repeat; }
+  background: url("../../dist/images/pag08/tracejado-06.png") no-repeat; }
 .pag08 .conselho {
   width: 710px;
   float: left;
@@ -2118,7 +2303,7 @@ p {
   position: absolute;
   margin-top: 61px;
   margin-left: 170px;
-  background: url("../../src/images/pag09/tracejado-01.png") no-repeat; }
+  background: url("../../dist/images/pag09/tracejado-01.png") no-repeat; }
 .pag09 .constituicao {
   width: 490px;
   float: right;
@@ -2151,7 +2336,7 @@ p {
   position: absolute;
   margin-top: 881px;
   margin-left: 290px;
-  background: url("../../src/images/pag09/tracejado-02.png") no-repeat; }
+  background: url("../../dist/images/pag09/tracejado-02.png") no-repeat; }
 .pag09 .indios-conflito {
   width: 460px;
   float: right;
@@ -2181,7 +2366,7 @@ p {
   height: 216px;
   right: 88px;
   margin-top: 325px;
-  background: url("../../src/images/pag10/tracejado-04.png") no-repeat; }
+  background: url("../../dist/images/pag10/tracejado-04.png") no-repeat; }
 .pag10 .indios-tecnologia {
   width: 366px;
   float: left;
@@ -2195,14 +2380,14 @@ p {
   height: 207px;
   margin-top: 539px;
   left: 450px;
-  background: url("../../src/images/pag10/tracejado-05.png") no-repeat; }
+  background: url("../../dist/images/pag10/tracejado-05.png") no-repeat; }
 .pag10 .tracejado06 {
   position: absolute;
   width: 460px;
   height: 2px;
   right: 35px;
   margin-top: -19px;
-  background: url("../../src/images/pag10/tracejado-06.png") no-repeat; }
+  background: url("../../dist/images/pag10/tracejado-06.png") no-repeat; }
 .pag10 .texto02 {
   width: 450px;
   float: left;
@@ -2233,21 +2418,21 @@ p {
   height: 72px;
   right: 239px;
   margin-top: 91px;
-  background: url("../../src/images/pag10/tracejado-01.png") no-repeat; }
+  background: url("../../dist/images/pag10/tracejado-01.png") no-repeat; }
 .pag10 .tracejado02 {
   position: absolute;
   width: 403px;
   height: 251px;
   margin-top: 162px;
   margin-left: 140px;
-  background: url("../../src/images/pag10/tracejado-02.png") no-repeat; }
+  background: url("../../dist/images/pag10/tracejado-02.png") no-repeat; }
 .pag10 .tracejado03 {
   position: absolute;
   width: 41px;
   height: 127px;
   right: 124px;
   margin-top: 205px;
-  background: url("../../src/images/pag10/tracejado-03.png") no-repeat; }
+  background: url("../../dist/images/pag10/tracejado-03.png") no-repeat; }
 .pag10 .texto03 {
   clear: both;
   margin-top: 40px;

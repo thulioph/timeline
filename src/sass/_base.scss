@@ -94,7 +94,7 @@ $title-period: $lithos-regular;
 
 // Tracejados
 @mixin path ($rulers...) {
-  background: url('../../src/images/'+$rulers) no-repeat;
+  background: url('../../dist/images/'+$rulers) no-repeat;
 }
 
 
