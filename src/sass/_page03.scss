@@ -77,6 +77,12 @@
     margin-top: 11px;
     position: relative;
     z-index: 2;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -20px;
+      margin-left: 150px;
+    }
   }
 
   .tracejado05 {

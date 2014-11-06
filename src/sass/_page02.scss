@@ -63,6 +63,13 @@
     margin-left: 72px;
     position: relative;
 
+    &::before {
+      @extend %data-legend;
+      bottom: -30px;
+      margin-left: 70px;
+    }
+
+
     a {
       &:nth-child(2) {
         margin-top: 160px;
@@ -80,9 +87,25 @@
     z-index: 4;
 
     a {
-      &:nth-child(1) {
+      &.img01 {
         margin-bottom: 75px;
         margin-left: 70px;
+        position: relative;
+
+        &::before {
+          @extend %data-legend;
+          bottom: -20px;
+          margin-left: -10px;
+        }
+      }
+
+      &.img02 {
+        position: relative;
+        &::before {
+          @extend %data-legend;
+          bottom: -50px;
+          margin-left: 0px;
+        }
       }
     }
   }
@@ -143,5 +166,11 @@
     margin-right: 25px;
     z-index: 4;
     position: relative;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -10px;
+      margin-left: 130px;
+    }
   }
 }

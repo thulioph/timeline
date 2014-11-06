@@ -93,6 +93,12 @@
     margin-right: 141px;
     position: absolute;
     z-index: 4;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -30px;
+      margin-left: 150px;
+    }
   }
 
   .demarcacao-terras {
@@ -102,6 +108,12 @@
     margin-left: 22px;
     position: relative;
     z-index: 4;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -20px;
+      margin-left: 190px;
+    }
   }
 
   .tracejado04 {

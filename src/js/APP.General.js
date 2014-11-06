@@ -30,7 +30,7 @@ APP.General = {
       },
 
       error: function() {
-        console.log('Não carregou!');
+        console.log('Ocorreu um erro!');
       }
     });
   }

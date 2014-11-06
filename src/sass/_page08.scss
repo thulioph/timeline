@@ -104,6 +104,12 @@
     margin-top: -71px;
     position: relative;
     z-index: 4;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -15px;
+      margin-left: 180px;
+    }
   }
 
   .tracejado07 {
@@ -152,6 +158,16 @@
     a {
       margin-top: 40px;
       margin-left: 83px;
+
+      &.img02 {
+        position: relative;
+
+        &::before {
+          @extend %data-legend;
+          bottom: -35px;
+          margin-left: -10px;
+        }
+      }
     }
 
     .group {
@@ -217,5 +233,12 @@
     float: right;
     margin-right: 64px;
     margin-top: -85px;
+    position: relative;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -15px;
+      margin-left: 60px;
+    }
   }
 }

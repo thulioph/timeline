@@ -725,6 +725,13 @@ body:after {
   display: inline-block;
   border-right: 2px solid #f3ead2; }
 
+.pag01 .reconstrucao-luzia-01::before, .pag01 .capivara::before, .pag01 .sambaquis::before, .pag01 .ceramica-marajoara::before, .pag01 .capa-veja::before, .pag01 .niede::before, .pag02 .mapa-indio::before, .pag02 .caravela a.img01::before, .pag02 .caravela a.img02::before, .pag02 .mapa::before, .pag03 .pau-brasil-02::before, .pag04 .cartaz::before, .pag04 .expulsao-jesuitas::before, .pag04 .danca-tapuias::before, .pag05 .proclamacao a:nth-child(1)::before, .pag05 .proclamacao a:nth-child(2)::before, .pag06 .tribo-bororos::before, .pag06 .demarcacao-terras::before, .pag07 .eduardo-galvao::before, .pag07 .getulio-karaja::before, .pag07 .darcy-ribeiro-indios::before, .pag08 .mapa::before, .pag08 .xingu a.img02::before, .pag08 .jornal::before, .pag09 .constituicao::before, .pag09 .indio::before, .pag09 .mapa::before, .pag09 .indios-conflito::before, .pag10 .indios a.img01::before, .pag10 .indios a:nth-child(2)::before, .pag10 .indios-tecnologia::before, .pag10 .culinaria a:nth-child(1)::before, .pag10 .culinaria a:nth-child(2)::before, .pag10 .culinaria a:nth-child(3)::before {
+  content: attr(data-legend);
+  color: #990000;
+  font-size: 1.1em;
+  position: absolute;
+  text-align: center; }
+
 body {
   font-size: 10px;
   background-color: #f3ead2;
@@ -1052,6 +1059,9 @@ p {
 
 /* iPad - em pé ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  body {
+    display: none; }
+
   .main .content {
     max-width: 768px; } }
 /* iPad - deitado ----------- */
@@ -1211,6 +1221,9 @@ p {
   margin-left: -47px;
   position: relative;
   z-index: 4; }
+  .pag01 .reconstrucao-luzia-01::before {
+    bottom: -20px;
+    margin-left: 130px; }
 .pag01 .tracejado08 {
   position: absolute;
   width: 648px;
@@ -1225,6 +1238,9 @@ p {
   margin-top: -32px;
   position: relative;
   z-index: 4; }
+  .pag01 .capivara::before {
+    top: 196px;
+    margin-left: 70px; }
   .pag01 .capivara a:nth-child(1) {
     margin-left: 21px; }
   .pag01 .capivara a:nth-child(2) {
@@ -1275,6 +1291,9 @@ p {
   margin-left: 13px;
   position: relative;
   z-index: 4; }
+  .pag01 .sambaquis::before {
+    bottom: -20px;
+    margin-left: 60px; }
 .pag01 .ceramica-marajoara {
   width: 368px;
   float: right;
@@ -1282,6 +1301,9 @@ p {
   margin-top: 46px;
   position: relative;
   z-index: 4; }
+  .pag01 .ceramica-marajoara::before {
+    bottom: -20px;
+    margin-left: 60px; }
   .pag01 .ceramica-marajoara a:nth-child(1) {
     margin-left: 12px; }
   .pag01 .ceramica-marajoara a:nth-child(2) {
@@ -1289,7 +1311,10 @@ p {
 .pag01 .capa-veja {
   float: left;
   margin-top: 12px;
-  margin-left: 50px; }
+  margin-left: 50px;
+  position: relative; }
+  .pag01 .capa-veja::before {
+    bottom: -60px; }
 .pag01 .tracejado09 {
   position: absolute;
   width: 140px;
@@ -1360,7 +1385,11 @@ p {
 .pag01 .niede {
   width: 260px;
   float: right;
-  margin-right: 10px; }
+  margin-right: 10px;
+  position: relative; }
+  .pag01 .niede::before {
+    top: 160px;
+    margin-left: 150px; }
   .pag01 .niede a {
     margin-top: -56px;
     float: left;
@@ -1421,6 +1450,9 @@ p {
   float: left;
   margin-left: 72px;
   position: relative; }
+  .pag02 .mapa-indio::before {
+    bottom: -30px;
+    margin-left: 70px; }
   .pag02 .mapa-indio a:nth-child(2) {
     margin-top: 160px;
     margin-left: -50px;
@@ -1431,9 +1463,18 @@ p {
   margin-top: 25px;
   position: relative;
   z-index: 4; }
-  .pag02 .caravela a:nth-child(1) {
+  .pag02 .caravela a.img01 {
     margin-bottom: 75px;
-    margin-left: 70px; }
+    margin-left: 70px;
+    position: relative; }
+    .pag02 .caravela a.img01::before {
+      bottom: -20px;
+      margin-left: -10px; }
+  .pag02 .caravela a.img02 {
+    position: relative; }
+    .pag02 .caravela a.img02::before {
+      bottom: -50px;
+      margin-left: 0px; }
 .pag02 .tracejado03 {
   width: 319px;
   height: 397px;
@@ -1478,6 +1519,9 @@ p {
   margin-right: 25px;
   z-index: 4;
   position: relative; }
+  .pag02 .mapa::before {
+    bottom: -10px;
+    margin-left: 130px; }
 
 .pag03 .texto01 {
   width: 455px;
@@ -1536,6 +1580,9 @@ p {
   margin-top: 11px;
   position: relative;
   z-index: 2; }
+  .pag03 .pau-brasil-02::before {
+    bottom: -20px;
+    margin-left: 150px; }
 .pag03 .tracejado05 {
   position: absolute;
   width: 255px;
@@ -1638,7 +1685,7 @@ p {
   padding: 30px; }
 
 .pag04 .title-primary {
-  font-size: 4em; }
+  font-size: 3.8em; }
 .pag04 .texto01 {
   width: 440px;
   float: left;
@@ -1658,6 +1705,9 @@ p {
   margin-right: 10px;
   position: relative;
   background-color: #bfdad7; }
+  .pag04 .cartaz::before {
+    bottom: -20px;
+    margin-left: 2px; }
   .pag04 .cartaz a {
     float: left;
     margin-top: -10px; }
@@ -1694,6 +1744,9 @@ p {
   margin-top: 60px;
   position: relative;
   z-index: 4; }
+  .pag04 .expulsao-jesuitas::before {
+    bottom: -10px;
+    margin-left: 110px; }
   .pag04 .expulsao-jesuitas p {
     font-size: 1.2em; }
   .pag04 .expulsao-jesuitas a {
@@ -1778,6 +1831,9 @@ p {
   right: 63px;
   position: relative;
   z-index: 3; }
+  .pag04 .danca-tapuias::before {
+    bottom: -20px;
+    margin-left: 10px; }
 .pag04 .texto04 {
   clear: both;
   display: inline-block;
@@ -1845,9 +1901,15 @@ p {
     .pag05 .proclamacao a:nth-child(1) {
       margin-top: 38px;
       margin-left: 188px; }
+      .pag05 .proclamacao a:nth-child(1)::before {
+        bottom: -10px;
+        margin-left: 110px; }
     .pag05 .proclamacao a:nth-child(2) {
       margin-top: -62px;
       margin-left: -18px; }
+      .pag05 .proclamacao a:nth-child(2)::before {
+        bottom: -20px;
+        margin-left: 60px; }
 .pag05 .tracejado08 {
   position: absolute;
   width: 145px;
@@ -1975,6 +2037,9 @@ p {
   margin-right: 141px;
   position: absolute;
   z-index: 4; }
+  .pag06 .tribo-bororos::before {
+    bottom: -30px;
+    margin-left: 150px; }
 .pag06 .demarcacao-terras {
   float: left;
   width: 503px;
@@ -1982,6 +2047,9 @@ p {
   margin-left: 22px;
   position: relative;
   z-index: 4; }
+  .pag06 .demarcacao-terras::before {
+    bottom: -20px;
+    margin-left: 190px; }
 .pag06 .tracejado04 {
   position: absolute;
   width: 483px;
@@ -2093,12 +2161,20 @@ p {
   width: 388px;
   margin-top: 18px;
   float: left;
-  margin-left: 57px; }
+  margin-left: 57px;
+  position: relative; }
+  .pag07 .eduardo-galvao::before {
+    bottom: -15px;
+    margin-left: 210px; }
 .pag07 .getulio-karaja {
   width: 315px;
   float: right;
   margin-right: 101px;
-  margin-top: 19px; }
+  margin-top: 19px;
+  position: relative; }
+  .pag07 .getulio-karaja::before {
+    bottom: -15px;
+    margin-left: 70px; }
 .pag07 .tracejado05 {
   position: absolute;
   width: 326px;
@@ -2128,6 +2204,9 @@ p {
   margin-right: 15px;
   position: relative;
   z-index: 4; }
+  .pag07 .darcy-ribeiro-indios::before {
+    bottom: -15px;
+    margin-left: 150px; }
 .pag07 .texto02 p:nth-child(1) {
   width: 460px;
   margin-top: 28px;
@@ -2211,6 +2290,9 @@ p {
   margin-top: -71px;
   position: relative;
   z-index: 4; }
+  .pag08 .mapa::before {
+    bottom: -15px;
+    margin-left: 180px; }
 .pag08 .tracejado07 {
   position: absolute;
   width: 2px;
@@ -2244,6 +2326,11 @@ p {
   .pag08 .xingu a {
     margin-top: 40px;
     margin-left: 83px; }
+    .pag08 .xingu a.img02 {
+      position: relative; }
+      .pag08 .xingu a.img02::before {
+        bottom: -35px;
+        margin-left: -10px; }
   .pag08 .xingu .group {
     height: 350px;
     padding: 10px;
@@ -2289,7 +2376,11 @@ p {
   width: 200px;
   float: right;
   margin-right: 64px;
-  margin-top: -85px; }
+  margin-top: -85px;
+  position: relative; }
+  .pag08 .jornal::before {
+    bottom: -15px;
+    margin-left: 60px; }
 
 .pag09 .title-primary {
   font-size: 3.7em; }
@@ -2308,23 +2399,36 @@ p {
   width: 490px;
   float: right;
   margin-top: 85px;
-  margin-right: 35px; }
+  margin-right: 35px;
+  position: relative; }
+  .pag09 .constituicao::before {
+    bottom: -6px;
+    margin-left: 80px; }
 .pag09 .texto02 {
   float: left;
   width: 416px;
   background: #bfdad7;
   margin-top: 26px;
-  padding: 10px 10px 10px 60px; }
+  padding: 10px 10px 10px 50px;
+  margin-left: 10px; }
 .pag09 .indio {
   width: 390px;
   float: left;
   margin-top: 4px;
-  margin-left: 60px; }
+  margin-left: 60px;
+  position: relative; }
+  .pag09 .indio::before {
+    bottom: -20px;
+    margin-left: 40px; }
 .pag09 .mapa {
   width: 467px;
   float: right;
   margin-top: -47px;
-  margin-right: 51px; }
+  margin-right: 51px;
+  position: relative; }
+  .pag09 .mapa::before {
+    bottom: -20px;
+    margin-left: 190px; }
 .pag09 .texto03 {
   width: 456px;
   float: left;
@@ -2341,10 +2445,14 @@ p {
   width: 460px;
   float: right;
   margin-right: 55px;
-  margin-top: 68px; }
+  margin-top: 68px;
+  position: relative; }
+  .pag09 .indios-conflito::before {
+    bottom: -9px;
+    margin-left: 150px; }
 
 .pag10 .title-primary {
-  font-size: 3.1em; }
+  font-size: 2.9em; }
 .pag10 .texto01 {
   width: 445px;
   float: left;
@@ -2357,9 +2465,18 @@ p {
   margin-right: 47px;
   position: relative;
   z-index: 4; }
+  .pag10 .indios a.img01 {
+    position: relative; }
+    .pag10 .indios a.img01::before {
+      bottom: -15px;
+      margin-left: 80px; }
   .pag10 .indios a:nth-child(2) {
     margin-top: 55px;
-    margin-left: 55px; }
+    margin-left: 55px;
+    position: relative; }
+    .pag10 .indios a:nth-child(2)::before {
+      bottom: -25px;
+      margin-left: 20px; }
 .pag10 .tracejado04 {
   position: absolute;
   width: 101px;
@@ -2374,6 +2491,9 @@ p {
   margin-top: 12px;
   position: relative;
   z-index: 4; }
+  .pag10 .indios-tecnologia::before {
+    bottom: -15px;
+    margin-left: 130px; }
 .pag10 .tracejado05 {
   position: absolute;
   width: 192px;
@@ -2404,14 +2524,27 @@ p {
     position: absolute;
     margin-top: 57px;
     margin-left: -18px; }
+    .pag10 .culinaria a:nth-child(1)::before {
+      bottom: -21px;
+      margin-left: -10px;
+      width: 250px; }
   .pag10 .culinaria a:nth-child(2) {
     position: absolute;
     right: 0;
     margin-top: 1px;
     margin-right: 46px; }
+    .pag10 .culinaria a:nth-child(2)::before {
+      bottom: -37px;
+      margin-left: -10px;
+      width: 130px;
+      text-align: right; }
   .pag10 .culinaria a:nth-child(3) {
     margin-top: 300px;
     margin-left: 45px; }
+    .pag10 .culinaria a:nth-child(3)::before {
+      bottom: 51px;
+      margin-left: 30px;
+      width: 190px; }
 .pag10 .tracejado01 {
   position: absolute;
   width: 66px;

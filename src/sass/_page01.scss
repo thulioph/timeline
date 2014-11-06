@@ -102,6 +102,12 @@
     margin-left: -47px;
     position: relative;
     z-index: 4;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -20px;
+      margin-left: 130px;
+    }
   }
 
   .tracejado08 {
@@ -120,6 +126,12 @@
     margin-top: -32px;
     position: relative;
     z-index: 4;
+
+    &::before {
+      @extend %data-legend;
+      top: 196px;
+      margin-left: 70px;
+    }
 
     a {
       &:nth-child(1) {
@@ -192,6 +204,12 @@
     margin-left: 13px;
     position: relative;
     z-index: 4;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -20px;
+      margin-left: 60px;
+    }
   }
 
   .ceramica-marajoara {
@@ -201,6 +219,12 @@
     margin-top: 46px;
     position: relative;
     z-index: 4;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -20px;
+      margin-left: 60px;
+    }
 
     a {
       &:nth-child(1) { margin-left: 12px; }
@@ -212,6 +236,12 @@
     float: left;
     margin-top: 12px;
     margin-left: 50px;
+    position: relative;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -60px;
+    }
   }
 
   .tracejado09 {
@@ -309,6 +339,13 @@
     width: 260px;
     float: right;
     margin-right: 10px;
+    position: relative;
+
+    &::before {
+      @extend %data-legend;
+      top: 160px;
+      margin-left: 150px;
+    }
 
     a {
       margin-top: -56px;

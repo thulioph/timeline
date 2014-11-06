@@ -44,6 +44,13 @@ $title-period: $lithos-regular;
   border-right: 2px solid $yellow;
 }
 
+%data-legend {
+  content: attr(data-legend);
+  color: $color-complementary;
+  font-size: 1.1em;
+  position: absolute;
+  text-align: center;
+}
 
 
 // ====================

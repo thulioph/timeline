@@ -104,6 +104,13 @@
     margin-top: 18px;
     float: left;
     margin-left: 57px;
+    position: relative;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -15px;
+      margin-left: 210px;
+    }
   }
 
   .getulio-karaja {
@@ -111,6 +118,13 @@
     float: right;
     margin-right: 101px;
     margin-top: 19px;
+    position: relative;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -15px;
+      margin-left: 70px;
+    }
   }
 
   .tracejado05 {
@@ -150,6 +164,12 @@
     margin-right: 15px;
     position: relative;
     z-index: 4;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -15px;
+      margin-left: 150px;
+    }
   }
 
   .texto02 {

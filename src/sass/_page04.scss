@@ -5,7 +5,7 @@
 .pag04 {
 
   .title-primary {
-    font-size: 4em;
+    font-size: 3.8em;
   }
 
   .texto01 {
@@ -31,6 +31,12 @@
     margin-right: 10px;
     position: relative;
     background-color: $azul;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -20px;
+      margin-left: 2px;
+    }
 
     a {
       float: left;
@@ -79,6 +85,12 @@
     margin-top: 60px;
     position: relative;
     z-index: 4;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -10px;
+      margin-left: 110px;
+    }
 
     p {
       font-size: 1.2em;
@@ -199,6 +211,12 @@
     right: 63px;
     position: relative;
     z-index: 3;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -20px;
+      margin-left: 10px;
+    }
   }
 
   .texto04 {

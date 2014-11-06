@@ -5,7 +5,7 @@
 .pag10 {
 
   .title-primary {
-    font-size: 3.1em;
+    font-size: 2.9em;
   }
 
   .texto01 {
@@ -24,9 +24,26 @@
     z-index: 4;
 
     a {
+      &.img01 {
+        position: relative;
+
+        &::before {
+          @extend %data-legend;
+          bottom: -15px;
+          margin-left: 80px;
+        }
+      }
+
       &:nth-child(2) {
         margin-top: 55px;
         margin-left: 55px;
+        position: relative;
+
+        &::before {
+          @extend %data-legend;
+          bottom: -25px;
+          margin-left: 20px;
+        }
       }
     }
   }
@@ -47,6 +64,12 @@
     margin-top: 12px;
     position: relative;
     z-index: 4;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -15px;
+      margin-left: 130px;
+    }
   }
 
   .tracejado05 {
@@ -87,6 +110,13 @@
         position: absolute;
         margin-top: 57px;
         margin-left: -18px;
+
+        &::before {
+          @extend %data-legend;
+          bottom: -21px;
+          margin-left: -10px;
+          width: 250px;
+        }
       }
 
       &:nth-child(2) {
@@ -94,11 +124,26 @@
         right: 0;
         margin-top: 1px;
         margin-right: 46px;
+
+        &::before {
+          @extend %data-legend;
+          bottom: -37px;
+          margin-left: -10px;
+          width: 130px;
+          text-align: right;
+        }
       }
 
       &:nth-child(3) {
         margin-top: 300px;
         margin-left: 45px;
+
+        &::before {
+          @extend %data-legend;
+          bottom: 51px;
+          margin-left: 30px;
+          width: 190px;
+        }
       }
     }
   }

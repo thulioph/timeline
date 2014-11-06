@@ -28,6 +28,13 @@
     float: right;
     margin-top: 85px;
     margin-right: 35px;
+    position: relative;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -6px;
+      margin-left: 80px;
+    }
   }
 
   .texto02 {
@@ -35,7 +42,8 @@
     width: 416px;
     background: $azul;
     margin-top: 26px;
-    padding: 10px 10px 10px 60px;
+    padding: 10px 10px 10px 50px;
+    margin-left: 10px;
   }
 
   .indio {
@@ -43,6 +51,13 @@
     float: left;
     margin-top: 4px;
     margin-left: 60px;
+    position: relative;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -20px;
+      margin-left: 40px;
+    }
   }
 
   .mapa {
@@ -50,6 +65,13 @@
     float: right;
     margin-top: -47px;
     margin-right: 51px;
+    position: relative;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -20px;
+      margin-left: 190px;
+    }
   }
 
   .texto03 {
@@ -73,6 +95,13 @@
     float: right;
     margin-right: 55px;
     margin-top: 68px;
+    position: relative;
+
+    &::before {
+      @extend %data-legend;
+      bottom: -9px;
+      margin-left: 150px;
+    }
   }
 
 }
