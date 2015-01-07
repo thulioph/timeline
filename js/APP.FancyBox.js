@@ -1,8 +1,6 @@
 var APP = APP || {};
 APP.FancyBox = {
   setUp: function() {
-    // this.modal();
-    // this.lightbox();
   },
 
   // Open modal text with click;

@@ -81,7 +81,59 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
+      Symbol.bindElementAction(compId, symbolName, "${_1}", "click", function(sym, e) {
+         //Clique na texto
+         
+         parent.APP.FancyBox.openText ("txt04_01_01");
+         
+         
+         
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_2}", "click", function(sym, e) {
+         //Clique na texto
+         
+         parent.APP.FancyBox.openText ("txt04_01_02");
+         
+         
+         
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_3}", "click", function(sym, e) {
+         //Clique na texto
+         
+         parent.APP.FancyBox.openText ("txt04_01_02");
+         
+         
+         
+         
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
+
+   //=========================================================
+   
+   //Edge symbol: 'imagem03_03_01'
+   (function(symbolName) {   
+   
+   })("imagem03_03_01");
+   //Edge symbol end:'imagem03_03_01'
+
+   //=========================================================
+   
+   //Edge symbol: 'imagens07_04_01'
+   (function(symbolName) {   
+   
+   })("imagens07_04_01");
+   //Edge symbol end:'imagens07_04_01'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-25094056");

@@ -81,7 +81,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       Symbol.bindElementAction(compId, symbolName, "${_1}", "click", function(sym, e) {
          //Clique na texto
          
-         parent.APP.FancyBox.openText ("txt06_02_01");
+         parent.APP.FancyBox.openText ("txt03_03_01");
          
          
          

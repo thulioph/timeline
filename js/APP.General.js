@@ -28,9 +28,6 @@ APP.General = {
         
         // Insert dynamic script with page in request;
         href = href.replace('.html', '');
-        // that.insertFirstScript(href);
-        // that.insertSecondScript(href);
-        // that.removeFirstScript(href);
       },
 
       success: function(href) {

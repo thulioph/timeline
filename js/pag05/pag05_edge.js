@@ -67,6 +67,7 @@
                             display: 'none',
                             type: 'image',
                             rect: ['16px', '146px', '820px', '380px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem05_01_01.png",'0px','0px']
                         },
                         {
@@ -101,6 +102,7 @@
                             display: 'none',
                             type: 'image',
                             rect: ['73px', '323px', '380px', '270px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem05_02_01.png",'0px','0px']
                         },
                         {
@@ -114,12 +116,14 @@
                         },
                         {
                             id: 'avancar',
+                            display: 'none',
                             type: 'image',
                             rect: ['936px', '45px', '20px', '41px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"avancar.png",'0px','0px']
                         },
                         {
                             id: 'voltar',
+                            display: 'none',
                             type: 'image',
                             rect: ['15px', '45px', '20px', '41px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"voltar.png",'0px','0px']
@@ -309,6 +313,36 @@
                             '0.000000'
                         ],
                         [
+                            "eid79",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${avancar}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid75",
+                            "display",
+                            2100,
+                            0,
+                            "linear",
+                            "${avancar}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid80",
+                            "display",
+                            4695,
+                            0,
+                            "linear",
+                            "${avancar}",
+                            'block',
+                            'none'
+                        ],
+                        [
                             "eid39",
                             "opacity",
                             1700,
@@ -409,6 +443,36 @@
                             'none'
                         ],
                         [
+                            "eid78",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${voltar}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid77",
+                            "display",
+                            4695,
+                            0,
+                            "linear",
+                            "${voltar}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid81",
+                            "display",
+                            6640,
+                            0,
+                            "linear",
+                            "${voltar}",
+                            'block',
+                            'none'
+                        ],
+                        [
                             "eid6",
                             "display",
                             0,
@@ -479,34 +543,44 @@
                             '0.000000'
                         ],
                         [
-                            "eid69",
-                            "display",
-                            0,
-                            0,
+                            "eid48",
+                            "left",
+                            3395,
+                            500,
                             "linear",
-                            "${imagem05_02_02}",
-                            'none',
-                            'none'
+                            "${texto07_02_01}",
+                            '985px',
+                            '22px'
                         ],
                         [
-                            "eid61",
-                            "display",
-                            4295,
-                            0,
+                            "eid49",
+                            "left",
+                            3895,
+                            100,
                             "linear",
-                            "${imagem05_02_02}",
-                            'none',
-                            'block'
+                            "${texto07_02_01}",
+                            '22px',
+                            '35px'
                         ],
                         [
-                            "eid62",
-                            "display",
-                            5090,
-                            0,
+                            "eid50",
+                            "left",
+                            5385,
+                            100,
                             "linear",
-                            "${imagem05_02_02}",
-                            'block',
-                            'none'
+                            "${texto07_02_01}",
+                            '35px',
+                            '25px'
+                        ],
+                        [
+                            "eid51",
+                            "left",
+                            5485,
+                            500,
+                            "linear",
+                            "${texto07_02_01}",
+                            '25px',
+                            '985px'
                         ],
                         [
                             "eid73",
@@ -589,44 +663,34 @@
                             'none'
                         ],
                         [
-                            "eid48",
-                            "left",
-                            3395,
-                            500,
+                            "eid69",
+                            "display",
+                            0,
+                            0,
                             "linear",
-                            "${texto07_02_01}",
-                            '985px',
-                            '22px'
+                            "${imagem05_02_02}",
+                            'none',
+                            'none'
                         ],
                         [
-                            "eid49",
-                            "left",
-                            3895,
-                            100,
+                            "eid61",
+                            "display",
+                            4295,
+                            0,
                             "linear",
-                            "${texto07_02_01}",
-                            '22px',
-                            '35px'
+                            "${imagem05_02_02}",
+                            'none',
+                            'block'
                         ],
                         [
-                            "eid50",
-                            "left",
-                            5385,
-                            100,
+                            "eid62",
+                            "display",
+                            5090,
+                            0,
                             "linear",
-                            "${texto07_02_01}",
-                            '35px',
-                            '25px'
-                        ],
-                        [
-                            "eid51",
-                            "left",
-                            5485,
-                            500,
-                            "linear",
-                            "${texto07_02_01}",
-                            '25px',
-                            '985px'
+                            "${imagem05_02_02}",
+                            'block',
+                            'none'
                         ]
                     ]
                 }

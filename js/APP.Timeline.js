@@ -3,6 +3,8 @@ APP.Timeline = {
   setUp: function() {
     this.addClass();
     this.trigger();
+    this.triggerModal();
+    this.escModal();
   },
 
   addClass: function() {
@@ -60,13 +62,33 @@ APP.Timeline = {
 
   trigger: function() {
     $('#click-animation').on('click', function(event) {
-
       if ($('#header-primary').hasClass('js-closed')) {
         APP.Timeline.stateOne();
       } else {
         APP.Timeline.stateTwo();
       }
+    });
+  },
 
+  triggerModal: function() {
+    $('#mask-modal').on('click', function(event) {
+      if ( $('#mask-modal').hasClass('js-visible-modal') ) {
+        APP.Timeline.stateTwo();
+      } else {
+        return APP.Timeline.stateOne();
+      }
+    });
+  },
+
+  escModal: function() {
+    $(document).on('keyup', function(event) {
+      if (event.keyCode == 27) {
+        if ( $('#mask-modal').hasClass('js-visible-modal') ) {
+          APP.Timeline.stateTwo();
+        } else {
+          return;
+        }
+      } 
     });
   }
 }

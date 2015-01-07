@@ -59,6 +59,7 @@
                             display: 'none',
                             type: 'image',
                             rect: ['22px', '210px', '945px', '244px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem01.png",'0px','0px']
                         },
                         {
@@ -66,6 +67,7 @@
                             display: 'none',
                             type: 'image',
                             rect: ['393px', '320px', '558px', '276px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem02.png",'0px','0px']
                         },
                         {
@@ -85,7 +87,8 @@
                             rect: ['171px', '568px', '212px', '28px', 'auto', 'auto'],
                             text: "Chegada de Capitanias",
                             align: "justify",
-                            font: ['Verdana, Geneva, sans-serif', [18, "px"], "rgba(153,40,40,1.00)", "400", "none solid rgb(0, 0, 0)", "normal", "break-word", "normal"]
+                            font: ['Verdana, Geneva, sans-serif', [18, "px"], "rgba(153,40,40,1.00)", "400", "none solid rgb(0, 0, 0)", "normal", "break-word", "normal"],
+                            textStyle: ["", "", "24px", ""]
                         },
                         {
                             id: 'texto03_02_01',
@@ -102,6 +105,7 @@
                             display: 'none',
                             type: 'image',
                             rect: ['-4px', '206px', '406px', '335px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem03.png",'0px','0px']
                         },
                         {
@@ -119,6 +123,7 @@
                             display: 'none',
                             type: 'image',
                             rect: ['469px', '206px', '481px', '375px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem04.png",'0px','0px']
                         },
                         {
@@ -128,7 +133,8 @@
                             rect: ['496px', '547px', '371px', '49px', 'auto', 'auto'],
                             text: "Tentativa de catequização dos índios",
                             align: "left",
-                            font: ['Verdana, Geneva, sans-serif', [18, "px"], "rgba(153,40,40,1.00)", "400", "none solid rgb(0, 0, 0)", "normal", "break-word", "normal"]
+                            font: ['Verdana, Geneva, sans-serif', [18, "px"], "rgba(153,40,40,1.00)", "400", "none solid rgb(0, 0, 0)", "normal", "break-word", "normal"],
+                            textStyle: ["", "", "24px", ""]
                         },
                         {
                             id: 'texto03_03_01',
@@ -142,6 +148,7 @@
                             display: 'none',
                             type: 'image',
                             rect: ['38px', '341px', '898px', '246px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem05.png",'0px','0px']
                         },
                         {
@@ -159,18 +166,21 @@
                             display: 'none',
                             type: 'rect',
                             rect: ['391px', '232px', '68px', '24px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             opacity: '0',
                             fill: ["rgba(192,192,192,1)"],
                             stroke: [0,"rgb(0, 0, 0)","none"]
                         },
                         {
                             id: 'avancar',
+                            display: 'none',
                             type: 'image',
                             rect: ['936px', '45px', '20px', '41px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"avancar2.png",'0px','0px']
                         },
                         {
                             id: 'voltar',
+                            display: 'none',
                             type: 'image',
                             rect: ['15px', '45px', '20px', '41px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"voltar2.png",'0px','0px']
@@ -190,24 +200,24 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid7",
+                            "eid42",
                             "opacity",
-                            1800,
+                            0,
                             400,
                             "linear",
-                            "${imagem03_01_02}",
-                            '0.000000',
+                            "${borda}",
+                            '0',
                             '1'
                         ],
                         [
-                            "eid8",
+                            "eid43",
                             "opacity",
-                            3790,
+                            12750,
                             400,
                             "linear",
-                            "${imagem03_01_02}",
+                            "${borda}",
                             '1',
-                            '0.000000'
+                            '0'
                         ],
                         [
                             "eid102",
@@ -370,24 +380,34 @@
                             '985px'
                         ],
                         [
-                            "eid11",
-                            "opacity",
-                            2600,
-                            400,
+                            "eid117",
+                            "display",
+                            0,
+                            0,
                             "linear",
-                            "${texto03_01_03}",
-                            '0.000000',
-                            '1'
+                            "${imagem03_02_02}",
+                            'none',
+                            'none'
                         ],
                         [
-                            "eid12",
-                            "opacity",
-                            3000,
-                            400,
+                            "eid61",
+                            "display",
+                            6580,
+                            0,
                             "linear",
-                            "${texto03_01_03}",
-                            '1',
-                            '0.000000'
+                            "${imagem03_02_02}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid62",
+                            "display",
+                            8170,
+                            0,
+                            "linear",
+                            "${imagem03_02_02}",
+                            'block',
+                            'none'
                         ],
                         [
                             "eid59",
@@ -710,34 +730,34 @@
                             '0.000000'
                         ],
                         [
-                            "eid149",
-                            "top",
+                            "eid157",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${avancar}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid156",
+                            "display",
+                            3000,
+                            0,
+                            "linear",
+                            "${avancar}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid155",
+                            "display",
                             10955,
                             0,
                             "linear",
-                            "${_1}",
-                            '232px',
-                            '232px'
-                        ],
-                        [
-                            "eid55",
-                            "opacity",
-                            5780,
-                            400,
-                            "linear",
-                            "${imagem03_02_01}",
-                            '0.000000',
-                            '1'
-                        ],
-                        [
-                            "eid56",
-                            "opacity",
-                            8565,
-                            400,
-                            "linear",
-                            "${imagem03_02_01}",
-                            '1',
-                            '0.000000'
+                            "${avancar}",
+                            'block',
+                            'none'
                         ],
                         [
                             "eid115",
@@ -800,74 +820,74 @@
                             'none'
                         ],
                         [
-                            "eid142",
-                            "top",
-                            7380,
-                            0,
+                            "eid55",
+                            "opacity",
+                            5780,
+                            400,
                             "linear",
-                            "${texto03_02_03}",
-                            '547px',
-                            '547px'
+                            "${imagem03_02_01}",
+                            '0.000000',
+                            '1'
                         ],
                         [
-                            "eid41",
-                            "display",
-                            13150,
-                            0,
+                            "eid56",
+                            "opacity",
+                            8565,
+                            400,
                             "linear",
-                            "${borda}",
-                            'block',
-                            'none'
+                            "${imagem03_02_01}",
+                            '1',
+                            '0.000000'
                         ],
                         [
-                            "eid124",
+                            "eid153",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${texto03_03_01}",
+                            "${voltar}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid94",
+                            "eid154",
                             "display",
-                            9560,
+                            7380,
                             0,
                             "linear",
-                            "${texto03_03_01}",
+                            "${voltar}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid95",
+                            "eid158",
                             "display",
-                            12350,
+                            13150,
                             0,
                             "linear",
-                            "${texto03_03_01}",
+                            "${voltar}",
                             'block',
                             'none'
                         ],
                         [
-                            "eid42",
+                            "eid11",
                             "opacity",
-                            0,
+                            2600,
                             400,
                             "linear",
-                            "${borda}",
-                            '0',
+                            "${texto03_01_03}",
+                            '0.000000',
                             '1'
                         ],
                         [
-                            "eid43",
+                            "eid12",
                             "opacity",
-                            12750,
+                            3000,
                             400,
                             "linear",
-                            "${borda}",
+                            "${texto03_01_03}",
                             '1',
-                            '0'
+                            '0.000000'
                         ],
                         [
                             "eid126",
@@ -898,6 +918,46 @@
                             "${texto03_03_02}",
                             'block',
                             'none'
+                        ],
+                        [
+                            "eid63",
+                            "opacity",
+                            6580,
+                            400,
+                            "linear",
+                            "${imagem03_02_02}",
+                            '0.000000',
+                            '1'
+                        ],
+                        [
+                            "eid64",
+                            "opacity",
+                            7775,
+                            400,
+                            "linear",
+                            "${imagem03_02_02}",
+                            '1',
+                            '0.000000'
+                        ],
+                        [
+                            "eid7",
+                            "opacity",
+                            1800,
+                            400,
+                            "linear",
+                            "${imagem03_01_02}",
+                            '0.000000',
+                            '1'
+                        ],
+                        [
+                            "eid8",
+                            "opacity",
+                            3790,
+                            400,
+                            "linear",
+                            "${imagem03_01_02}",
+                            '1',
+                            '0.000000'
                         ],
                         [
                             "eid125",
@@ -980,52 +1040,42 @@
                             'none'
                         ],
                         [
-                            "eid63",
-                            "opacity",
-                            6580,
-                            400,
-                            "linear",
-                            "${imagem03_02_02}",
-                            '0.000000',
-                            '1'
-                        ],
-                        [
-                            "eid64",
-                            "opacity",
-                            7775,
-                            400,
-                            "linear",
-                            "${imagem03_02_02}",
-                            '1',
-                            '0.000000'
-                        ],
-                        [
-                            "eid117",
+                            "eid124",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${imagem03_02_02}",
+                            "${texto03_03_01}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid61",
+                            "eid94",
                             "display",
-                            6580,
+                            9560,
                             0,
                             "linear",
-                            "${imagem03_02_02}",
+                            "${texto03_03_01}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid62",
+                            "eid95",
                             "display",
-                            8170,
+                            12350,
                             0,
                             "linear",
-                            "${imagem03_02_02}",
+                            "${texto03_03_01}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid41",
+                            "display",
+                            13150,
+                            0,
+                            "linear",
+                            "${borda}",
                             'block',
                             'none'
                         ]
@@ -1042,20 +1092,20 @@
                 content: {
                     dom: [
                         {
+                            font: ['Verdana, Geneva, sans-serif', [20, 'px'], 'rgba(0,0,0,1)', '400', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'normal'],
                             type: 'text',
-                            rect: ['0px', '0px', '898px', '27px', 'auto', 'auto'],
                             id: 'Text',
                             text: 'Povos de várias etnias foram forçados a se ajuntarem nos aldeamentos gerando uma grande reserva de mão-de-obra já adaptada, o que causou a cobiça dos colonos e bandeirantes. A cisão entre “índios mansos”, ou aldeados e “índios bárbaros” ou não cristãos proporcionou aos primeiros a sobrevivência nos aldeamentos e aos últimos o cativeiro, o massacre, a guerra-justa . Na tentativa de punir os indígenas pelas infrações cometidas foram praticadas violências desde castigos corporais a uma pedagogia policiadora, obediente e fiel. ',
                             align: 'justify',
-                            font: ['Verdana, Geneva, sans-serif', [20, 'px'], 'rgba(0,0,0,1)', '400', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'normal']
+                            rect: ['0px', '0px', '898px', '27px', 'auto', 'auto']
                         },
                         {
+                            font: ['Verdana, Geneva, sans-serif', [14, 'px'], 'rgba(153,40,40,1.00)', '400', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['407px', '100px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text2',
                             text: '1',
                             align: 'justify',
-                            font: ['Verdana, Geneva, sans-serif', [14, 'px'], 'rgba(153,40,40,1.00)', '400', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
+                            rect: ['407px', '100px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1082,27 +1132,26 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '891px', '30px', 'auto', 'auto'],
-                            textStyle: ['', '', '27px', ''],
                             font: ['Verdana, Geneva, sans-serif', [20, 'px'], 'rgba(0,0,0,1)', '400', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'normal'],
-                            id: 'imagem03_03_01',
-                            text: 'Povos de várias etnias foram forçados a se ajuntarem nos aldeamentos gerando uma grande reserva de mão-de-obra já adaptada, o que causou a cobiça dos colonos e bandeirantes. A cisão entre “índios mansos”, ou aldeados e “índios bárbaros” ou não cristãos proporcionou aos primeiros a sobrevivência nos aldeamentos e aos últimos o cativeiro, o massacre, a guerra-justa . Na tentativa de punir os indígenas pelas infrações cometidas foram praticadas violências desde castigos corporais a uma pedagogia policiadora, obediente e fiel. ',
+                            type: 'text',
                             align: 'justify',
-                            type: 'text'
+                            id: 'imagem03_03_01',
+                            textStyle: ['', '', '27px', ''],
+                            text: 'Povos de várias etnias foram forçados a se ajuntarem nos aldeamentos gerando uma grande reserva de mão-de-obra já adaptada, o que causou a cobiça dos colonos e bandeirantes. A cisão entre “índios mansos”, ou aldeados e “índios bárbaros” ou não cristãos proporcionou aos primeiros a sobrevivência nos aldeamentos e aos últimos o cativeiro, o massacre, a guerra-justa . Na tentativa de punir os indígenas pelas infrações cometidas foram praticadas violências desde castigos corporais a uma pedagogia policiadora, obediente e fiel. ',
+                            rect: ['0px', '0px', '891px', '30px', 'auto', 'auto']
                         },
                         {
-                            rect: ['405px', '106px', 'auto', 'auto', 'auto', 'auto'],
                             font: ['Verdana, Geneva, sans-serif', [15, 'px'], 'rgba(153,0,0,1.00)', '400', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
                             id: 'Text6',
                             text: '1',
                             align: 'justify',
-                            type: 'text'
+                            rect: ['405px', '106px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '891px', '118px']
+                            rect: [null, null, '891px', '118px']
                         }
                     }
                 },

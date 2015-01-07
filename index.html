@@ -7,6 +7,21 @@
 <!-- CSS -->
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/jquery.fancybox.css">
+<style>.edgeLoad-EDGE-5270443 { visibility:hidden; }</style>
+
+<!-- Edge -->
+<script src="js/vendor/edge/edge.5.0.1.min.js"></script>
+
+<script>
+  AdobeEdge.loadComposition('js/index/index', 'EDGE-5270443', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0",
+    maxW: "undefined",
+    width: "974px",
+    height: "640px"
+  }, {dom: [ ]}, {dom: [ ]});
+</script>
 
 </head>
 
@@ -22,7 +37,7 @@
 
     <div id="mask-modal" class="mask-modal"></div>
     <div id="content" class="content">
-      <canvas id="canvas" width="974" height="640" style="background-color:#ffffff"></canvas>
+      <div id="Stage" class="EDGE-5270443"></div>
     </div>
   </main>
 
